@@ -1,0 +1,53 @@
+/* Extra Extra Large Screen Header */
+
+$nav-height: 15.4rem;
+
+nav {
+  height: $nav-height;
+}
+
+.logo {
+  // top: -0.5rem;
+  font-size: 3.8rem;
+
+  .logo__abr {
+    top: -3rem;
+  }
+
+  .logo__com {
+    font-size: 2.4rem;
+  }
+}
+
+.header__links {
+  a {
+    margin-right: 7rem;
+  }
+}
+
+.burger {
+  width: 4.3rem;
+}
+
+.burger__line {
+  margin-bottom: 0.9rem;
+}
+
+/*  Nav Dropdown Menu */
+
+@include set-dropdown-menu($nav-height);
+
+.socials {
+  width: 32.7rem;
+  padding-bottom: set-vertical-space-2(
+    $font-size-primary,
+    $line-height-primary
+  );
+}
+
+.socials__telegram,
+.socials__instagram,
+.socials__facebook {
+  width: 6.2rem;
+  height: 6.2rem;
+}
