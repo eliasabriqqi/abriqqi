@@ -1,0 +1,548 @@
+/* VARIABLES */
+
+@import "../../variables/variables";
+
+.brand-signature {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  bottom: 0;
+}
+
+.brand-signature--vertical-spacing {
+  margin: set-vertical-space-2($font-size-primary, $line-height-primary) 0
+    set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+}
+
+.brand-signature__logo {
+  margin: auto;
+  width: 7.4rem;
+  height: 7.4rem;
+  background-image: url(/src/assets/svg/brand-signature-logo/brand-signature__logo-74.svg);
+}
+
+.brand-signature__tagline {
+  margin-top: 0.6rem;
+  color: #deb374;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.author-intro {
+  margin-bottom: set-vertical-space-3($font-size-primary, $line-height-primary);
+}
+
+.author-intro__pic {
+  height: 50.9rem;
+  background-image: url(/src/assets/pics/author-intro/xsm/author-intro__pic-min.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.author-intro__name {
+  margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+.author-intro__author-role {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-style: italic;
+}
+
+.author-intro__name,
+.author-intro__author-role {
+  font-family: "Playfair Display";
+  text-align: center;
+}
+
+.readmore-btn__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand-promo__text-content {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.brand-promo .heading-h1 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.brand-promo__video {
+  position: relative;
+}
+
+.brand-promo__video-poster {
+  height: 49.1rem;
+  background-image: url(/src/assets/pics/brand-promo__video-poster/xsm/brand-promo__video-poster-min.webp);
+}
+
+.tutorial-section__pic {
+  margin: 0 -3rem;
+  background-color: $standout-color-4;
+  grid-row: 1;
+}
+
+.tutorial-section__content {
+  padding: set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+  color: #fff;
+  grid-row: 1;
+}
+
+.tutorial-section__content .heading-h2 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.courses-section {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.courses-section__pic {
+  margin: 0 -3rem set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    ) -3rem;
+  height: 26.2rem;
+  background-image: url(/src/assets/pics/homepage-courses-section/xsm/courses-section__pic-xsm-min.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.courses-section__content h2 {
+  text-transform: uppercase;
+}
+
+.courses-section__content .heading-h2 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.courses-section__text {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.application-form--homepage {
+  margin-bottom: set-vertical-space-3($font-size-primary, $line-height-primary);
+}
+
+.application-form__submit {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../../variables/variables-sm";
+
+  .author-intro {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .author-intro__pic {
+    height: 74.4rem;
+    background-image: url(/src/assets/pics/author-intro/sm/author-intro__pic-sm-min.webp);
+  }
+
+  .author-intro__name {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    font-size: 3.2rem;
+  }
+
+  .author-intro__author-role {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__text-content {
+    margin-top: auto;
+    grid-row: 1;
+    z-index: 2;
+    color: #fff;
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo .heading-h1 {
+    max-width: 35rem;
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__cta-text {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    border: 1px solid $standout-color-secondary;
+  }
+
+  .brand-promo__video {
+    grid-row: 1;
+    z-index: 1;
+  }
+
+  .brand-promo__video-poster {
+    height: 38.8rem;
+    background-image: url(/src/assets/pics/brand-promo__video-poster/sm/brand-promo__video-poster-sm-min.webp);
+  }
+
+  .courses-section {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__pic {
+    height: 44.8rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/sm/courses-section__pic-sm-min.jpg);
+  }
+
+  .courses-section__content .heading-h2 {
+    max-width: 35rem;
+  }
+
+  .application-form--homepage {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../../variables/variables-md";
+
+  .brand-signature--vertical-spacing {
+    margin: set-vertical-space-5($font-size-primary, $line-height-primary) 0
+      set-vertical-space-5($font-size-primary, $line-height-primary) 0;
+  }
+
+  .brand-signature__logo {
+    width: 8.2rem;
+    height: 8.3rem;
+    background-image: url(/src/assets/svg/brand-signature-logo/brand-signature__logo-82.svg);
+  }
+
+  .brand-signature__tagline {
+    margin-top: 0.7rem;
+  }
+
+  .author-intro {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .author-intro__pic {
+    height: 52.4rem;
+    background-image: url(/src/assets/pics/author-intro/md/author-intro__pic-md-min.webp);
+    order: 2;
+  }
+
+  .author-intro__name {
+    font-size: 2.4rem;
+  }
+
+  .author-intro__name,
+  .author-intro__author-role,
+  .author-intro__text {
+    order: 1;
+  }
+
+  .author-intro__name,
+  .author-intro__author-role {
+    text-align: right;
+  }
+
+  .brand-promo__text-content {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__video-poster {
+    height: 55.5rem;
+    background-image: url(/src/assets/pics/brand-promo__video-poster/md/brand-promo__video-poster-md-min.webp);
+  }
+
+  .tutorial-section {
+    margin: set-vertical-space-6($font-size-primary, $line-height-primary) 0;
+    align-items: center;
+  }
+
+  .tutorial-section__pic {
+    height: 25.7rem;
+    margin: 0;
+    background-color: transparent;
+    background-image: url(/src/assets/pics/homepage-tutorial-section/md/tutorial-section__pic-md-min.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: auto;
+  }
+
+  .tutorial-section__content {
+    padding: 0;
+    color: $font-color-primary;
+    grid-row: auto;
+  }
+
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .link-btn__svg {
+    background-image: url(/src/assets/svg/link-btn/link-btn__svg--standout2.svg);
+  }
+
+  .link-btn__text {
+    color: $standout-color-quaternary;
+  }
+
+  .courses-section {
+    align-items: center;
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__pic {
+    margin: 0;
+    height: 34rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/md/courses-section__pic-md-min.webp);
+    grid-row: 1;
+  }
+
+  .courses-section__content {
+    grid-row: 1;
+  }
+
+  .separator--homepage {
+    display: none;
+  }
+
+  .application-form--homepage {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../../variables/variables-lg";
+
+  .brand-signature--vertical-spacing {
+    margin: set-vertical-space-6($font-size-primary, $line-height-primary) 0
+      set-vertical-space-6($font-size-primary, $line-height-primary) 0;
+  }
+
+  .brand-signature__tagline {
+    margin-top: 0.8rem;
+  }
+
+  .author-intro {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .author-intro__pic {
+    height: 62.1rem;
+    background-image: url(/src/assets/pics/author-intro/lg/author-intro__pic-lg-min.webp);
+  }
+
+  .author-intro__name {
+    margin-top: set-vertical-space-3($font-size-primary, $line-height-primary);
+  }
+
+  .brand-promo__text-content {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__video-poster {
+    height: 76.1rem;
+    background-image: url(/src/assets/pics/brand-promo__video-poster/lg/brand-promo__video-poster-lg-min.webp);
+  }
+
+  .tutorial-section__pic {
+    height: 34.9rem;
+    background-image: url(/src/assets/pics/homepage-tutorial-section/lg/tutorial-section__pic-lg-min.webp);
+  }
+
+  .courses-section {
+    align-items: center;
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section .heading-h2 {
+    position: relative;
+  }
+
+  .courses-section__line {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    width: 14rem;
+    border-bottom: 1px solid $font-color-primary;
+  }
+
+  .courses-section__pic {
+    height: 34.8rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/lg/courses-section__pic-lg-min.webp);
+  }
+
+  .application-form--homepage {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../../variables/variables-xl";
+
+  .brand-signature--vertical-spacing {
+    margin: set-vertical-space-7($font-size-primary, $line-height-primary) 0
+      set-vertical-space-7($font-size-primary, $line-height-primary) 0;
+  }
+
+  .brand-signature__tagline {
+    margin-top: 0.9rem;
+  }
+
+  .author-intro__pic {
+    height: 70rem;
+    background-image: url(/src/assets/pics/author-intro/xl/author-intro__pic-xl-min.webp);
+  }
+
+  .author-intro__name {
+    font-size: 2.6rem;
+  }
+
+  .brand-promo__text-content {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__video-poster {
+    background-image: url(/src/assets/pics/brand-promo__video-poster/xl/brand-promo__video-poster-xl-min.webp);
+  }
+
+  .tutorial-section__pic {
+    height: 39.4rem;
+    background-image: url(/src/assets/pics/homepage-tutorial-section/xl/tutorial-section__pic-xl-min.webp);
+  }
+
+  .application-form--homepage {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../../variables/variables-xxl";
+
+  .brand-signature__tagline {
+    margin-top: 1rem;
+  }
+
+  .author-intro__pic {
+    height: 69.6rem;
+    background-image: url(/src/assets/pics/author-intro/xxl/author-intro__pic-xxl-min.webp);
+  }
+
+  .author-intro__name {
+    font-size: 2.8rem;
+  }
+
+  .brand-promo__text-content {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .brand-promo__video-poster {
+    height: 101.4rem;
+    background-image: url(/src/assets/pics/brand-promo__video-poster/xxl/brand-promo__video-poster-xxl-min.webp);
+  }
+
+  .tutorial-section__pic {
+    height: 52.7rem;
+    background-image: url(/src/assets/pics/homepage-tutorial-section/xxl/tutorial-section__pic-xxl-min.webp);
+  }
+
+  .application-form--homepage {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}

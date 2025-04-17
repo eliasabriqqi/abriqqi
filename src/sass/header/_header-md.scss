@@ -1,0 +1,80 @@
+/* Medium Screen Header */
+
+$nav-height: 10.7rem;
+
+nav {
+  height: $nav-height;
+}
+
+.header__links {
+  display: block;
+
+  a {
+    margin-right: 3rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.header__links {
+  position: absolute;
+}
+
+.header__links,
+.burger {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.burger {
+  width: 3.2rem;
+}
+
+.burger__line {
+  margin-bottom: 0.6rem;
+}
+
+.burger__line1.burger--active {
+  transform: rotate(135deg) translate(6px, -6px);
+}
+
+.burger__line3.burger--active {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+/*  Nav Dropdown Menu */
+
+@include set-dropdown-menu($nav-height);
+
+.dropdown-menu {
+  padding-top: set-vertical-space-5($font-size-primary, $line-height-primary);
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+.socials {
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+  width: 26rem;
+}
+
+.socials__telegram,
+.socials__instagram,
+.socials__facebook {
+  width: 5.2rem;
+  height: 5.3rem;
+  cursor: pointer;
+}
