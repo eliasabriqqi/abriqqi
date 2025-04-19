@@ -325,7 +325,7 @@ p.application-form__text {
 .application-form input[type="email"] {
   border: 0;
   border-bottom: 1px solid $font-color-primary;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0 0.2rem 0.5rem;
 }
 
 .application-form textarea {
@@ -426,7 +426,7 @@ p.application-form__text {
   }
 
   .video-poster .play-btn {
-    margin: 0 9rem 7rem 0;
+    margin: 0 9rem 7.5rem 0;
   }
 
   /* Separator */
@@ -438,6 +438,14 @@ p.application-form__text {
     );
   }
 
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .application-form input[type="email"],
   .application-form textarea {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
@@ -534,7 +542,9 @@ p.application-form__text {
   }
 
   p.application-form__text,
-  .application-form textarea {
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary

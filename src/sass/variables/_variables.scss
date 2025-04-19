@@ -22,6 +22,10 @@ $line-color-primary: #e2e2e2;
 $burger-line: #e8826a;
 $burger-line-hovered: #ffaa96;
 
+/* Header */
+
+$nav-height: 7.4rem;
+
 /* MIXINS */
 
 @mixin set-font-size($fs) {
