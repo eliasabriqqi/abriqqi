@@ -5,6 +5,7 @@
 /* Font Settings */
 /* Standout Colors */
 /* Other Colors */
+/* Header */
 /* MIXINS */
 /* VERTICAL SPACING */
 /* Font Imports */
@@ -320,7 +321,7 @@ p.application-form__text {
 .application-form input[type=email] {
   border: 0;
   border-bottom: 1px solid #3e3e3e;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0 0.2rem 0.5rem;
 }
 
 .application-form textarea {
@@ -601,6 +602,7 @@ footer .socials {
 
 /* Small Screen */
 @media only screen and (min-width: 600px) {
+  /* Header */
   p,
   a,
   li,
@@ -663,12 +665,16 @@ footer .socials {
     z-index: 1;
   }
   .video-poster .play-btn {
-    margin: 0 9rem 7rem 0;
+    margin: 0 9rem 7.5rem 0;
   }
   /* Separator */
   .separator {
     margin-bottom: 5rem;
   }
+  .application-form h3 {
+    margin-bottom: 2.5rem;
+  }
+  .application-form input[type=email],
   .application-form textarea {
     margin-bottom: 2.5rem;
   }
@@ -748,8 +754,13 @@ footer .socials {
     opacity: 0.8;
   }
   /* Small Screen */
+  footer {
+    padding: 5rem 0 2.5rem 0;
+  }
   .footer__nav {
     display: flex;
+    padding-top: 13.2rem;
+    padding-bottom: 7.5rem;
   }
   .footer__nav h4 {
     margin-bottom: 2.5rem;
@@ -790,6 +801,7 @@ footer .socials {
 }
 /* Medium Screen */
 @media only screen and (min-width: 900px) {
+  /* Header */
   p,
   a,
   li,
@@ -857,7 +869,9 @@ footer .socials {
     justify-content: space-between;
   }
   p.application-form__text,
-  .application-form textarea {
+  .application-form input[type=email],
+  .application-form textarea,
+  .application-form h3 {
     margin-bottom: 2.25rem;
   }
   /* Header Import */
@@ -921,7 +935,11 @@ footer .socials {
   }
   /* Medium Screen */
   footer {
-    padding: 4.5rem 0 4.5rem 0;
+    padding: 4.5rem 0 2.25rem 0;
+  }
+  .footer__nav {
+    padding-top: 12.7rem;
+    padding-bottom: 6.75rem;
   }
   .footer__nav h4 {
     margin-bottom: 4.5rem;
@@ -936,12 +954,16 @@ footer .socials {
     margin-bottom: 0;
     padding-right: 9vw;
   }
+  footer .socials {
+    margin-bottom: 2.25rem;
+  }
   .copyright {
     font-size: 1.8rem;
   }
 }
 /* Large Screen */
 @media only screen and (min-width: 1200px) {
+  /* Header */
   p,
   a,
   li,
@@ -1011,6 +1033,7 @@ footer .socials {
 }
 /* Extra Large Screen */
 @media only screen and (min-width: 1400px) {
+  /* Header */
   p {
     margin-bottom: 2.5rem;
   }
@@ -1095,6 +1118,7 @@ footer .socials {
 }
 /* Extra Extra Large Screen */
 @media only screen and (min-width: 1800px) {
+  /* Header */
   p {
     margin-bottom: 2.75rem;
   }

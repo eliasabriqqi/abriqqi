@@ -1,7 +1,17 @@
 /* Small Screen */
 
+footer {
+  padding: set-vertical-space-2($font-size-primary, $line-height-primary) 0
+    set-vertical-space-1($font-size-primary, $line-height-primary) 0;
+}
+
 .footer__nav {
   display: flex;
+  padding-top: 13.2rem;
+  padding-bottom: set-vertical-space-3(
+    $font-size-primary,
+    $line-height-primary
+  );
 
   h4 {
     margin-bottom: set-vertical-space-1(
