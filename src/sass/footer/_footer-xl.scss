@@ -1,0 +1,35 @@
+/* Large Screen */
+
+footer {
+  padding: set-vertical-space-2($font-size-primary, $line-height-primary) 0
+    set-vertical-space-1($font-size-primary, $line-height-primary) 0;
+}
+
+.footer__nav {
+  padding-top: 3.2rem;
+  padding-bottom: set-vertical-space-7(
+    $font-size-primary,
+    $line-height-primary
+  );
+
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+footer .socials {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.copyright {
+  font-size: $font-size-primary;
+}

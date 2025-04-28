@@ -1,0 +1,93 @@
+/* Font Settings */
+
+$font-size-primary: 2.4rem;
+$line-height-primary: 1.25;
+$heading-h1-size: 4.2rem;
+$heading-h2-size: 3.8rem;
+$heading-lh: 1.1;
+$paragraph-mb: calc($font-size-primary * $line-height-primary);
+$font-color-primary: #3e3e3e;
+
+/* Standout Colors */
+
+$standout-color-primary: #f2c685;
+$standout-color-secondary: #f2c47f;
+$standout-color-tertiary: #ffd8a1;
+$standout-color-quaternary: #deb374;
+$standout-color-4: #7b909c;
+
+/* Other Colors */
+
+$line-color-primary: #e2e2e2;
+$burger-line: #e8826a;
+$burger-line-hovered: #ffaa96;
+
+/* Header */
+
+$nav-height: 7.4rem;
+
+/* MIXINS */
+
+@mixin set-font-size($fs) {
+  p,
+  a,
+  li,
+  input,
+  textarea {
+    font-size: $fs;
+  }
+}
+
+@mixin set-heading-h1-size($mh) {
+  h1,
+  .heading-h1 .subheading {
+    font-size: $mh;
+  }
+}
+
+@mixin set-heading-h2-size($mh) {
+  h2,
+  .heading-h2 .subheading {
+    font-size: $mh;
+  }
+}
+
+@mixin set-paragraph-mb($fs, $lh) {
+  p {
+    margin-bottom: calc($fs * $lh);
+  }
+}
+
+/* VERTICAL SPACING */
+
+@function set-vertical-space-05($fs, $lh) {
+  @return calc($fs * $lh / 2);
+}
+
+@function set-vertical-space-1($fs, $lh) {
+  @return calc($fs * $lh);
+}
+
+@function set-vertical-space-2($fs, $lh) {
+  @return calc($fs * $lh * 2);
+}
+
+@function set-vertical-space-3($fs, $lh) {
+  @return calc($fs * $lh * 3);
+}
+
+@function set-vertical-space-4($fs, $lh) {
+  @return ($fs * $lh * 4);
+}
+
+@function set-vertical-space-5($fs, $lh) {
+  @return calc($fs * $lh * 5);
+}
+
+@function set-vertical-space-6($fs, $lh) {
+  @return calc($fs * $lh * 6);
+}
+
+@function set-vertical-space-7($fs, $lh) {
+  @return calc($fs * $lh * 7);
+}

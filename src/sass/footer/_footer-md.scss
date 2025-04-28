@@ -1,0 +1,44 @@
+/* Medium Screen */
+
+footer {
+  padding: set-vertical-space-2($font-size-primary, $line-height-primary) 0
+    set-vertical-space-1($font-size-primary, $line-height-primary) 0;
+}
+
+.footer__nav {
+  padding-top: 12.7rem;
+  padding-bottom: set-vertical-space-3(
+    $font-size-primary,
+    $line-height-primary
+  );
+
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+.flex {
+  flex-direction: row;
+
+  ul:first-child {
+    margin-bottom: 0;
+    padding-right: 9vw;
+  }
+}
+
+footer .socials {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.copyright {
+  font-size: $font-size-primary;
+}
