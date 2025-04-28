@@ -1,0 +1,764 @@
+/* CSS and Sass Imports */
+
+@import url("../css/grid-system.css");
+@import url("../css/lang-btn.css");
+
+/* VARIABLES */
+
+@import "variables/variables";
+
+/* Font Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@font-face {
+  font-family: "Futura PT Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/FuturaPT-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura PT Light Oblique";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/FuturaPT-LightObl.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/FuturaPT-Book.ttf") format("truetype");
+}
+
+/* Browser Settings Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* SVG Paths */
+
+.socials__telegram.dark {
+  background-image: url(/src/assets/svg/socials/dark/socials__telegram--57.svg);
+}
+
+.socials__instagram.dark {
+  background-image: url(/src/assets/svg/socials/dark/socials__instagram--57.svg);
+}
+
+.socials__facebook.dark {
+  background-image: url(/src/assets/svg/socials/dark/socials__facebook--57.svg);
+}
+
+.socials__telegram.light {
+  background-image: url(/src/assets/svg/socials/light/socials__telegram--57.svg);
+}
+
+.socials__instagram.light {
+  background-image: url(/src/assets/svg/socials/light/socials__instagram--57.svg);
+}
+
+.socials__facebook.light {
+  background-image: url(/src/assets/svg/socials/light/socials__facebook--57.svg);
+}
+
+/* General Setings */
+
+@include set-font-size($font-size-primary);
+
+:root {
+  font-size: 62.5%;
+  font-family: "Futura PT Light";
+  line-height: $line-height-primary;
+  color: $font-color-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subheading {
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+.heading-h1 {
+  margin-left: -3rem;
+  padding-left: 1.6rem;
+  border-left: 1.4rem solid $standout-color-secondary;
+}
+
+.heading-h1,
+.heading-h2,
+h3 {
+  line-height: $heading-lh;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-style: italic;
+}
+
+@include set-heading-h1-size($heading-h1-size);
+@include set-heading-h2-size($heading-h2-size);
+
+h4 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+p {
+  margin-bottom: $paragraph-mb;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+input,
+textarea {
+  display: block;
+  font-family: "Futura PT Light";
+  color: $font-color-primary;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Futura PT Light";
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+/* Crutches */
+
+.height--100 {
+  height: 100%;
+}
+
+.mobile-visible {
+  display: block;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+/* Lazy Loading Background Images */
+
+#lazy {
+  background-image: none;
+}
+
+/* Video */
+
+.video--desktop {
+  display: none;
+}
+
+.video--mobile {
+  display: block;
+}
+
+.video--desktop,
+.video--mobile {
+  width: 100%;
+}
+
+.video--desktop.video--hidden,
+.video--mobile.video--hidden {
+  display: none;
+}
+
+.video-poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Read More Content */
+
+.readmore__content {
+  display: none;
+}
+
+.readmore__content--visible {
+  display: block;
+}
+
+/* Read More Button, Link Button */
+
+.readmore-btn,
+.link-btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.readmore-btn__svg,
+.link-btn__svg {
+  width: 4.3rem;
+  height: 4.3rem;
+  transition: 0.2s transform ease-in-out, 0.2s opacity ease-in-out;
+}
+
+.readmore-btn__svg {
+  background-image: url(/src/assets/svg/readmore-btn/readmore-btn__svg.svg);
+}
+
+.readless-btn__svg {
+  background-image: url(/src/assets/svg/readmore-btn/readless-btn__icon.svg);
+}
+
+.link-btn__svg {
+  background-image: url(/src/assets/svg/link-btn/link-btn__svg--standout.svg);
+}
+
+.link-btn__text {
+  color: $standout-color-tertiary;
+}
+
+.readmore-btn__text,
+.link-btn__text {
+  margin-left: 1.2rem;
+  transition: 0.2s opacity ease-in-out;
+}
+
+.readmore-btn:hover .readmore-btn__svg {
+  transform: translateY(0.5rem);
+  opacity: 0.8;
+}
+
+.readmore-btn:hover .readmore-btn__text {
+  opacity: 0.8;
+}
+
+.link-btn:hover .link-btn__svg {
+  transform: translateX(-0.5rem);
+  opacity: 0.8;
+}
+
+.link-btn:hover .link-btn__text {
+  opacity: 0.8;
+}
+
+.readmore-btn--spacing {
+  margin-top: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+}
+
+/* Main Button */
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: $standout-color-secondary;
+  transition: 0.2s background-color ease-in-out;
+}
+
+.main-btn:hover {
+  background-color: $standout-color-tertiary;
+}
+
+/* Play Button */
+
+.play-btn {
+  width: 7.4rem;
+  height: 7.4rem;
+  background-image: url(/src/assets/svg/play-btn/play-btn-74.svg);
+  transition: 0.3s transform ease-in-out, 0.2s opacity ease-in-out;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Separator */
+
+.separator {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+/* Application Form */
+
+.application-form h3 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-family: "Futura PT Light";
+  font-size: 3rem;
+}
+
+p.application-form__text {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.application-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid $font-color-primary;
+  padding: 0 0 0.2rem 0.5rem;
+}
+
+.application-form textarea {
+  height: 19.3rem;
+  border: 1px solid $font-color-primary;
+  padding: 0.5rem;
+}
+
+.application-form input[type="email"],
+.application-form textarea {
+  width: 100%;
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.application-form input[type="email"]:focus,
+.application-form textarea:focus {
+  outline: 0;
+}
+
+.application-form input[type="submit"] {
+  text-transform: uppercase;
+  color: $standout-color-quaternary;
+  transition: 0.2s opacity ease-in-out;
+  cursor: pointer;
+}
+
+.application-form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Header Import */
+
+@import "header/header";
+@import "footer/footer";
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "variables/variables-sm";
+  @include set-font-size($font-size-primary);
+  @include set-paragraph-mb($font-size-primary, $line-height-primary);
+  @include set-heading-h1-size($heading-h1-size);
+  @include set-heading-h2-size($heading-h2-size);
+
+  .mobile-visible {
+    display: none;
+  }
+
+  .mobile-hidden {
+    display: block;
+  }
+
+  .desktop-visible {
+    display: block;
+  }
+
+  .desktop-hidden {
+    display: none;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  .heading-h1 {
+    margin-left: 0;
+    padding-left: 2.2rem;
+    border-left: 0.8rem solid $standout-color-secondary;
+  }
+
+  .main-btn {
+    width: fit-content;
+    padding: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video */
+
+  .video--desktop {
+    display: block;
+  }
+
+  .video--mobile {
+    display: none;
+  }
+
+  .video-poster {
+    justify-content: end;
+    align-items: flex-end;
+    margin: 0;
+    grid-row: 1;
+    z-index: 1;
+  }
+
+  .video-poster .play-btn {
+    margin: 0 9rem 7.5rem 0;
+  }
+
+  /* Separator */
+
+  .separator {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .application-form input[type="email"],
+  .application-form textarea {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  p.application-form__text {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Header Import */
+
+  @import "header/header-sm";
+  @import "footer/footer-sm";
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "variables/variables-md";
+  @include set-font-size($font-size-primary);
+  @include set-paragraph-mb($font-size-primary, $line-height-primary);
+  @include set-heading-h1-size($heading-h1-size);
+  @include set-heading-h2-size($heading-h2-size);
+
+  /* Crutch for MD only */
+
+  .right-block-margin-md {
+    margin-left: 3.5rem;
+  }
+
+  // Crutch end
+
+  /* Video */
+
+  .video-poster {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-poster .play-btn {
+    margin: 0;
+  }
+
+  /* SVG Paths */
+
+  .socials__telegram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__telegram--52.svg);
+  }
+
+  .socials__instagram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__instagram--52.svg);
+  }
+
+  .socials__facebook.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__facebook--52.svg);
+  }
+
+  .socials__telegram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__telegram--52.svg);
+  }
+
+  .socials__instagram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__instagram--52.svg);
+  }
+
+  .socials__facebook.light {
+    background-image: url(/src/assets/svg/socials/light/socials__facebook--52.svg);
+  }
+
+  .sm-hidden {
+    display: block;
+  }
+
+  .main-btn {
+    width: fit-content;
+    padding: 1.7rem 2.3rem;
+    font-size: 1.6rem;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .application-form__text-block,
+  .application-form__input-block {
+    grid-row: 1;
+  }
+
+  .application-form__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  p.application-form__text,
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Header Import */
+
+  @import "header/header-md";
+  @import "footer/footer-md";
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "variables/variables-lg";
+  @include set-font-size($font-size-primary);
+  @include set-paragraph-mb($font-size-primary, $line-height-primary);
+  @include set-heading-h1-size($heading-h1-size);
+  @include set-heading-h2-size($heading-h2-size);
+
+  h4 {
+    font-size: 2.6rem;
+  }
+
+  .main-btn {
+    padding: 1.7rem 1.8rem;
+    font-size: $font-size-primary;
+  }
+
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  p.application-form__text,
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Crutch for MD only */
+
+  .right-block-margin-md {
+    margin-left: 0;
+  }
+
+  // Crutch end
+
+  @import "header/header-lg";
+  @import "footer/footer-lg";
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "variables/variables-xl";
+  @include set-paragraph-mb($font-size-primary, $line-height-primary);
+  @include set-heading-h1-size($heading-h1-size);
+  @include set-heading-h2-size($heading-h2-size);
+
+  /* SVG Paths */
+
+  .socials__telegram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__telegram--57.svg);
+  }
+
+  .socials__instagram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__instagram--57.svg);
+  }
+
+  .socials__facebook.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__facebook--57.svg);
+  }
+
+  .socials__telegram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__telegram--57.svg);
+  }
+
+  .socials__instagram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__instagram--57.svg);
+  }
+
+  .socials__facebook.light {
+    background-image: url(/src/assets/svg/socials/light/socials__facebook--57.svg);
+  }
+
+  @include set-font-size($font-size-primary);
+
+  h4 {
+    font-size: 2.8rem;
+  }
+
+  .main-btn {
+    padding: 1.9rem;
+    font-size: $font-size-primary;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  p.application-form__text,
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  @import "header/header-xl";
+  @import "footer/footer-xl";
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "variables/variables-xxl";
+  @include set-paragraph-mb($font-size-primary, $line-height-primary);
+  @include set-heading-h1-size($heading-h1-size);
+  @include set-heading-h2-size($heading-h2-size);
+
+  /* SVG Paths */
+
+  .socials__telegram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__telegram--62.svg);
+  }
+
+  .socials__instagram.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__instagram--62.svg);
+  }
+
+  .socials__facebook.dark {
+    background-image: url(/src/assets/svg/socials/dark/socials__facebook--62.svg);
+  }
+
+  .socials__telegram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__telegram--62.svg);
+  }
+
+  .socials__instagram.light {
+    background-image: url(/src/assets/svg/socials/light/socials__instagram--62.svg);
+  }
+
+  .socials__facebook.light {
+    background-image: url(/src/assets/svg/socials/light/socials__facebook--62.svg);
+  }
+
+  .socials__telegram.dark, .socials__instagram.dark, .socials__facebook.dark,  .socials__telegram.light, .socials__instagram.light, .socials__facebook.light {
+    background-repeat: no-repeat;
+  }
+
+
+  @include set-font-size($font-size-primary);
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  .main-btn {
+    padding: 2rem;
+    font-size: $font-size-primary;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  p.application-form__text,
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  @import "header/header-xxl";
+  @import "footer/footer-xxl";
+}

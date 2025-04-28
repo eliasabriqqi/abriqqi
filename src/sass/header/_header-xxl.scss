@@ -1,0 +1,77 @@
+/* Extra Extra Large Screen Header */
+
+nav {
+  height: $nav-height;
+}
+
+.logo {
+  // top: -0.5rem;
+  font-size: 3.8rem;
+
+  .logo__abr {
+    top: -3rem;
+  }
+
+  .logo__com {
+    font-size: 2.4rem;
+  }
+}
+
+.header__links {
+  a {
+    margin-right: 7rem;
+  }
+}
+
+.burger {
+  width: 4.3rem;
+}
+
+.burger__line {
+  margin-bottom: 0.9rem;
+}
+
+.burger__line1.burger--active {
+  transform: rotate(135deg) translate(8px, -8px);
+}
+
+.burger__line3.burger--active {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/*  Nav Dropdown Menu */
+
+@include set-dropdown-menu($nav-height);
+
+.dropdown-menu {
+  padding-top: set-vertical-space-6($font-size-primary, $line-height-primary);
+
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+.socials {
+  width: 32.7rem;
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+}
+
+.socials__telegram,
+.socials__instagram,
+.socials__facebook {
+  width: 6.3rem;
+  height: 6.3rem;
+}

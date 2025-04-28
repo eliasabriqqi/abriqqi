@@ -1,0 +1,19 @@
+{
+  "name": "abriqqi",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass src/sass/main.scss src/css/main.css -w",
+    "compile:content": "sass src/sass/pages/home/home.scss src/css/home.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1"
+  },
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}

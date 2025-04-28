@@ -1,0 +1,95 @@
+/* Small Screen Header */
+
+nav {
+  height: $nav-height;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  font-size: 3.4rem;
+  line-height: 1;
+  font-weight: 900;
+
+  .logo__abr {
+    position: absolute;
+    left: 1.2rem;
+    top: -2.7rem;
+  }
+
+  .logo__qq {
+    text-transform: uppercase;
+  }
+
+  .logo__com {
+    font-size: 2rem;
+  }
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burger:hover {
+  .burger__line {
+    background-color: $burger-line-hovered;
+  }
+}
+
+/*  Nav Dropdown Menu */
+
+@include set-dropdown-menu($nav-height);
+
+.dropdown-menu {
+  padding-top: set-vertical-space-3($font-size-primary, $line-height-primary);
+  padding-bottom: 0;
+  h4 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  li {
+    float: left;
+    clear: left;
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dropdown-menu__links-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  position: absolute;
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+  bottom: 0;
+  justify-self: center;
+  width: 30rem;
+}
+
+.socials__telegram,
+.socials__instagram,
+.socials__facebook {
+  transition: 0.2s transform ease-in-out, 0.2s opacity ease-in-out;
+}
+
+.socials__telegram:hover,
+.socials__instagram:hover,
+.socials__facebook:hover {
+  transform: scale(1.04);
+  opacity: 0.8;
+}

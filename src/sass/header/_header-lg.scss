@@ -1,0 +1,53 @@
+/* Large Screen Header */
+
+nav {
+  height: $nav-height;
+}
+
+.header__links {
+  transform: translateX(50%) translateY(-50%);
+  a {
+    margin-right: 5rem;
+  }
+}
+
+.burger {
+  width: 3.5rem;
+}
+
+.burger__line {
+  margin-bottom: 0.7rem;
+}
+
+.burger__line1.burger--active {
+  transform: rotate(135deg) translate(6px, -6px);
+}
+
+/*  Nav Dropdown Menu */
+
+@include set-dropdown-menu($nav-height);
+
+.dropdown-menu {
+  padding-top: set-vertical-space-6($font-size-primary, $line-height-primary);
+
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+.socials {
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+}
