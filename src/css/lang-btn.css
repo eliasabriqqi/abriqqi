@@ -23,7 +23,7 @@ nav .lang-btn {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
-  line-height: 1.25;
+  line-height: 1;
   text-transform: uppercase;
   font-family: "Futura PT Book";
   cursor: pointer;

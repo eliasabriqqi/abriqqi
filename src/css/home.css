@@ -316,6 +316,9 @@
   .author-intro__name {
     margin-top: 6.75rem;
   }
+  .author-intro__author-role {
+    margin-bottom: 2.25rem;
+  }
   .brand-promo__text-content {
     margin-bottom: 9rem;
   }
@@ -326,9 +329,15 @@
     height: 76.1rem;
     background-image: url(/src/assets/pics/brand-promo__video-poster/lg/brand-promo__video-poster-lg-min.webp);
   }
+  .tutorial-section {
+    margin: 15.75rem 0;
+  }
   .tutorial-section__pic {
     height: 34.9rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/lg/tutorial-section__pic-lg-min.webp);
+  }
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: 2.25rem;
   }
   .courses-section {
     align-items: center;
@@ -336,6 +345,10 @@
   }
   .courses-section .heading-h2 {
     position: relative;
+  }
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: 2.25rem;
   }
   .courses-section__line {
     position: absolute;
@@ -361,12 +374,19 @@
   .brand-signature__tagline {
     margin-top: 0.9rem;
   }
+  .author-intro {
+    margin-bottom: 17.5rem;
+  }
   .author-intro__pic {
     height: 70rem;
     background-image: url(/src/assets/pics/author-intro/xl/author-intro__pic-xl-min.webp);
   }
   .author-intro__name {
+    margin-top: 7.5rem;
     font-size: 2.6rem;
+  }
+  .author-intro__author-role {
+    margin-bottom: 2.5rem;
   }
   .brand-promo__text-content {
     margin-bottom: 10rem;
@@ -377,9 +397,30 @@
   .brand-promo__video-poster {
     background-image: url(/src/assets/pics/brand-promo__video-poster/xl/brand-promo__video-poster-xl-min.webp);
   }
+  .tutorial-section {
+    margin: 17.5rem 0;
+  }
   .tutorial-section__pic {
     height: 39.4rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/xl/tutorial-section__pic-xl-min.webp);
+  }
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: 2.5rem;
+  }
+  .courses-section {
+    margin-bottom: 17.5rem;
+  }
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: 2.5rem;
+  }
+  .courses-section__line {
+    left: 86%;
+    width: 13rem;
+  }
+  .courses-section__pic {
+    height: 39.2rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/xl/courses-section__pic-xl-min.webp);
   }
   .application-form--homepage {
     margin-bottom: 17.5rem;
@@ -388,15 +429,25 @@
 /* Extra Extra Large Screen */
 @media only screen and (min-width: 1800px) {
   /* Header */
+  .brand-signature--vertical-spacing {
+    margin: 34.65rem 0 19.25rem 0;
+  }
   .brand-signature__tagline {
     margin-top: 1rem;
+  }
+  .author-intro {
+    margin-bottom: 19.25rem;
   }
   .author-intro__pic {
     height: 69.6rem;
     background-image: url(/src/assets/pics/author-intro/xxl/author-intro__pic-xxl-min.webp);
   }
   .author-intro__name {
+    margin-top: 8.25rem;
     font-size: 2.8rem;
+  }
+  .author-intro__author-role {
+    margin-bottom: 2.75rem;
   }
   .brand-promo__text-content {
     margin-bottom: 11rem;
@@ -408,9 +459,30 @@
     height: 101.4rem;
     background-image: url(/src/assets/pics/brand-promo__video-poster/xxl/brand-promo__video-poster-xxl-min.webp);
   }
+  .tutorial-section {
+    margin: 19.25rem 0;
+  }
   .tutorial-section__pic {
     height: 52.7rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/xxl/tutorial-section__pic-xxl-min.webp);
+  }
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: 2.75rem;
+  }
+  .courses-section {
+    margin-bottom: 19.25rem;
+  }
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: 2.75rem;
+  }
+  .courses-section__line {
+    left: 100%;
+    width: 15rem;
+  }
+  .courses-section__pic {
+    height: 52.5rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/xxl/courses-section__pic-xxl-min.webp);
   }
   .application-form--homepage {
     margin-bottom: 19.25rem;

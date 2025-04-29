@@ -434,6 +434,13 @@
     margin-top: set-vertical-space-3($font-size-primary, $line-height-primary);
   }
 
+  .author-intro__author-role {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   .brand-promo__text-content {
     margin-bottom: set-vertical-space-4(
       $font-size-primary,
@@ -452,10 +459,21 @@
     height: 76.1rem;
     background-image: url(/src/assets/pics/brand-promo__video-poster/lg/brand-promo__video-poster-lg-min.webp);
   }
+  
+  .tutorial-section {
+    margin: set-vertical-space-7($font-size-primary, $line-height-primary) 0;
+  }
 
   .tutorial-section__pic {
     height: 34.9rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/lg/tutorial-section__pic-lg-min.webp);
+  }
+
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
   .courses-section {
@@ -468,6 +486,14 @@
 
   .courses-section .heading-h2 {
     position: relative;
+  }
+
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
   .courses-section__line {
@@ -508,13 +534,25 @@
     margin-top: 0.9rem;
   }
 
+  .author-intro {
+    margin-bottom: set-vertical-space-7($font-size-primary, $line-height-primary);
+  }
+
   .author-intro__pic {
     height: 70rem;
     background-image: url(/src/assets/pics/author-intro/xl/author-intro__pic-xl-min.webp);
   }
 
   .author-intro__name {
+    margin-top: set-vertical-space-3($font-size-primary, $line-height-primary);
     font-size: 2.6rem;
+  }
+
+  .author-intro__author-role {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
   .brand-promo__text-content {
@@ -535,9 +573,45 @@
     background-image: url(/src/assets/pics/brand-promo__video-poster/xl/brand-promo__video-poster-xl-min.webp);
   }
 
+  .tutorial-section {
+    margin: set-vertical-space-7($font-size-primary, $line-height-primary) 0;
+  }
+
   .tutorial-section__pic {
     height: 39.4rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/xl/tutorial-section__pic-xl-min.webp);
+  }
+
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__line {
+    left: 86%;
+    width: 13rem;
+  }
+
+  .courses-section__pic {
+    height: 39.2rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/xl/courses-section__pic-xl-min.webp);
   }
 
   .application-form--homepage {
@@ -553,8 +627,20 @@
 @media only screen and (min-width: 1800px) {
   @import "../../variables/variables-xxl";
 
+  .brand-signature--vertical-spacing {
+    margin: calc(
+        set-vertical-space-7($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-7($font-size-primary, $line-height-primary) 0;
+  }
+
   .brand-signature__tagline {
     margin-top: 1rem;
+  }
+
+  .author-intro {
+    margin-bottom: set-vertical-space-7($font-size-primary, $line-height-primary);
   }
 
   .author-intro__pic {
@@ -563,7 +649,15 @@
   }
 
   .author-intro__name {
+    margin-top: set-vertical-space-3($font-size-primary, $line-height-primary);
     font-size: 2.8rem;
+  }
+
+  .author-intro__author-role {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
   .brand-promo__text-content {
@@ -585,9 +679,45 @@
     background-image: url(/src/assets/pics/brand-promo__video-poster/xxl/brand-promo__video-poster-xxl-min.webp);
   }
 
+  .tutorial-section {
+    margin: set-vertical-space-7($font-size-primary, $line-height-primary) 0;
+  }
+
   .tutorial-section__pic {
     height: 52.7rem;
     background-image: url(/src/assets/pics/homepage-tutorial-section/xxl/tutorial-section__pic-xxl-min.webp);
+  }
+
+  .tutorial-section__content .heading-h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__content .heading-h2,
+  .courses-section__text {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .courses-section__line {
+    left: 100%;
+    width: 15rem;
+  }
+
+  .courses-section__pic {
+    height: 52.5rem;
+    background-image: url(/src/assets/pics/homepage-courses-section/xxl/courses-section__pic-xxl-min.webp);
   }
 
   .application-form--homepage {

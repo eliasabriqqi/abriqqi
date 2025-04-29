@@ -271,6 +271,13 @@ input[type="submit"] {
   opacity: 0.8;
 }
 
+.readmore-btn--spacing {
+  margin-top: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+}
+
 /* Main Button */
 
 .main-btn {
@@ -407,6 +414,13 @@ p.application-form__text {
     cursor: pointer;
   }
 
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   /* Video */
 
   .video--desktop {
@@ -530,6 +544,13 @@ p.application-form__text {
     font-size: 1.6rem;
   }
 
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   .application-form__text-block,
   .application-form__input-block {
     grid-row: 1;
@@ -570,8 +591,23 @@ p.application-form__text {
     font-size: 2.6rem;
   }
 
+  .main-btn {
+    padding: 1.7rem 1.8rem;
+    font-size: $font-size-primary;
+  }
+
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   p.application-form__text,
-  .application-form textarea {
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary
@@ -630,8 +666,22 @@ p.application-form__text {
     font-size: 2.8rem;
   }
 
+  .main-btn {
+    padding: 1.9rem;
+    font-size: $font-size-primary;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   p.application-form__text,
-  .application-form textarea {
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary
@@ -639,6 +689,7 @@ p.application-form__text {
   }
 
   @import "header/header-xl";
+  @import "footer/footer-xl";
 }
 
 /* Extra Extra Large Screen */
@@ -675,14 +726,33 @@ p.application-form__text {
     background-image: url(/src/assets/svg/socials/light/socials__facebook--62.svg);
   }
 
+  .socials__telegram.dark, .socials__instagram.dark, .socials__facebook.dark,  .socials__telegram.light, .socials__instagram.light, .socials__facebook.light {
+    background-repeat: no-repeat;
+  }
+
+
   @include set-font-size($font-size-primary);
 
   h4 {
     font-size: 3rem;
   }
 
+  .main-btn {
+    padding: 2rem;
+    font-size: $font-size-primary;
+  }
+
+  .readmore-btn--spacing {
+    margin-top: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   p.application-form__text,
-  .application-form textarea {
+  .application-form input[type="email"],
+  .application-form textarea,
+  .application-form h3 {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary
@@ -690,4 +760,5 @@ p.application-form__text {
   }
 
   @import "header/header-xxl";
+  @import "footer/footer-xxl";
 }
