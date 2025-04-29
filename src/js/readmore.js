@@ -12,6 +12,7 @@ const showContent = function (e) {
 const changeSvg = function (e) {
   const svg = e.target.closest(".readmore").querySelector(".readmore-btn__svg");
   svg.classList.toggle("readless-btn__svg");
+  e.target.closest(".readmore-btn").classList.toggle("readmore-btn--spacing");
 };
 
 const changeBtnText = function (e) {

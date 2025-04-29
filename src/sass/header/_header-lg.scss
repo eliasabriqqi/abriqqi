@@ -28,5 +28,26 @@ nav {
 @include set-dropdown-menu($nav-height);
 
 .dropdown-menu {
-  padding-top: set-vertical-space-3($font-size-primary, $line-height-primary);
+  padding-top: set-vertical-space-6($font-size-primary, $line-height-primary);
+
+  h4 {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  li {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+.socials {
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
 }
