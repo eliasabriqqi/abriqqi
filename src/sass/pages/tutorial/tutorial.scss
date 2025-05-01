@@ -1,0 +1,403 @@
+/* VARIABLES */
+
+@import "../../variables/variables";
+
+.intro-quote {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 2.2rem;
+  color: $font-color-light;
+}
+
+.intro-quote--vertical-spacing {
+  margin: calc(
+      set-vertical-space-2($font-size-primary, $line-height-primary) +
+        $nav-height
+    )
+    0 set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+}
+
+.manual-section {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.manual-section__pic {
+  margin: 0 -3rem set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    ) -3rem;
+  height: 24.4rem;
+  background-image: url(/src/assets/pics/tutorial-manual-section/xsm/manual-pic-xsm-min.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.manual-section__content .heading-h1 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.tutorial-module-links {
+  margin: set-vertical-space-2($font-size-primary, $line-height-primary) 0
+    set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+}
+
+.tutorial-module-links .text-link a {
+  display: block;
+  width: fit-content;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.text-link__main {
+  text-align: center;
+}
+
+.tutorial-module-links .sublink {
+  font-size: 1.6rem;
+}
+
+.tutorial-about-section {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.tutorial-about-section h2 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-size: 2.8rem;
+  order: 1;
+}
+
+.tutorial-about-section__text {
+  order: 2;
+}
+
+.tutorial-about-section__text:first-of-type p:last-child {
+  margin-bottom: $paragraph-mb;
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../../variables/variables-sm";
+
+  .intro-quote--vertical-spacing {
+    margin: calc(
+        set-vertical-space-2($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+  }
+
+  .manual-section {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .manual-section__pic {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+    height: 41.7rem;
+    background-image: url(/src/assets/pics/tutorial-manual-section/sm/manual-pic-sm-min.webp);
+  }
+
+  .manual-section__content .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-module-links {
+    margin: set-vertical-space-3($font-size-primary, $line-height-primary) 0
+      set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+  }
+
+  .tutorial-module-links .text-link a {
+    font-size: 2.8rem;
+  }
+
+  .tutorial-module-links .sublink {
+    font-size: 1.6rem;
+  }
+
+  .tutorial-about-section {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-about-section h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../../variables/variables-md";
+
+  .intro-quote {
+    padding-left: 2.4rem;
+    border-left: 4px solid $standout-color-secondary;
+    font-size: 1.8rem;
+  }
+
+  .intro-quote--vertical-spacing {
+    margin: calc(
+        set-vertical-space-3($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-3($font-size-primary, $line-height-primary) 0;
+  }
+
+  .manual-section {
+    align-items: center;
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .manual-section__pic {
+    margin: 0;
+    height: 23.9rem;
+    background-image: url(/src/assets/pics/tutorial-manual-section/md/manual-pic-md-min.webp);
+    grid-row: 1;
+  }
+
+  .manual-section__content {
+    grid-row: 1;
+  }
+
+  .manual-section__content .heading-h1 {
+    padding: 0;
+    border: none;
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-module-links {
+    margin: set-vertical-space-5($font-size-primary, $line-height-primary) 0
+      set-vertical-space-5($font-size-primary, $line-height-primary) 0;
+  }
+
+  .tutorial-module-links .text-link a {
+    font-size: 3.4rem;
+  }
+
+  .tutorial-module-links .sublink {
+    font-size: 2.2rem;
+  }
+
+  .tutorial-about-section {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-about-section h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 3rem;
+  }
+
+  .tutorial-about-section__text:first-of-type p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../../variables/variables-lg";
+
+  .intro-quote--vertical-spacing {
+    margin: calc(
+        set-vertical-space-4($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-4($font-size-primary, $line-height-primary) 0;
+  }
+
+  .manual-section {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .manual-section__pic {
+    height: 32.4rem;
+    background-image: url(/src/assets/pics/tutorial-manual-section/lg/manual-pic-lg-min.webp);
+  }
+
+  .manual-section__content .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-module-links {
+    margin: set-vertical-space-6($font-size-primary, $line-height-primary) 0
+      set-vertical-space-6($font-size-primary, $line-height-primary) 0;
+  }
+
+  .tutorial-about-section {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-about-section h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 3.2rem;
+  }
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../../variables/variables-xl";
+
+  .intro-quote {
+    font-size: 2rem;
+  }
+
+  .intro-quote--vertical-spacing {
+    margin: calc(
+        set-vertical-space-4($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-4($font-size-primary, $line-height-primary) 0;
+  }
+
+  .manual-section {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .manual-section__pic {
+    height: 36.5rem;
+    background-image: url(/src/assets/pics/tutorial-manual-section/xl/manual-pic-xl-min.webp);
+  }
+
+  .manual-section__content .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-module-links {
+    margin: set-vertical-space-6($font-size-primary, $line-height-primary) 0
+      set-vertical-space-6($font-size-primary, $line-height-primary) 0;
+  }
+
+  .tutorial-module-links .text-link a {
+    font-size: 3.8rem;
+  }
+
+  .tutorial-module-links .sublink {
+    font-size: 2.4rem;
+  }
+
+  .tutorial-about-section {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-about-section h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 3.6rem;
+  }
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../../variables/variables-xxl";
+
+  .intro-quote {
+    font-size: 2.2rem;
+  }
+
+  .intro-quote--vertical-spacing {
+    margin: calc(
+        set-vertical-space-4($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-4($font-size-primary, $line-height-primary) 0;
+  }
+
+  .manual-section {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .manual-section__pic {
+    height: 48.9rem;
+    background-image: url(/src/assets/pics/tutorial-manual-section/xxl/manual-pic-xxl-min.webp);
+  }
+
+  .manual-section__content .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-module-links {
+    margin: set-vertical-space-6($font-size-primary, $line-height-primary) 0
+      set-vertical-space-6($font-size-primary, $line-height-primary) 0;
+  }
+
+  .tutorial-module-links .text-link a {
+    font-size: 4.2rem;
+  }
+
+  .tutorial-module-links .sublink {
+    font-size: 2.8rem;
+  }
+
+  .tutorial-about-section {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-about-section h2 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 4rem;
+  }
+}

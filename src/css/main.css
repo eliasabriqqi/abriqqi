@@ -109,12 +109,14 @@ h3 {
   line-height: 1.1;
 }
 
-h1 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
 .subheading {
   font-style: italic;
+  text-transform: lowercase;
 }
 
 h1,
@@ -247,6 +249,14 @@ input[type=submit] {
   color: #ffd8a1;
 }
 
+.link-btn.link-btn--neutral .link-btn__svg {
+  background-image: url(/src/assets/svg/link-btn/link-btn__svg--neutral.svg);
+}
+
+.link-btn.link-btn--neutral .link-btn__text {
+  color: #3e3e3e;
+}
+
 .readmore-btn__text,
 .link-btn__text {
   margin-left: 1.2rem;
@@ -273,6 +283,17 @@ input[type=submit] {
 
 .readmore-btn--spacing {
   margin-top: 3rem;
+}
+
+.text-link {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  color: #deb374;
+}
+
+.sublink {
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 /* Main Button */
@@ -1228,7 +1249,12 @@ footer .socials {
   .socials__facebook.light {
     background-image: url(/src/assets/svg/socials/light/socials__facebook--62.svg);
   }
-  .socials__telegram.dark, .socials__instagram.dark, .socials__facebook.dark, .socials__telegram.light, .socials__instagram.light, .socials__facebook.light {
+  .socials__telegram.dark,
+  .socials__instagram.dark,
+  .socials__facebook.dark,
+  .socials__telegram.light,
+  .socials__instagram.light,
+  .socials__facebook.light {
     background-repeat: no-repeat;
   }
   p,

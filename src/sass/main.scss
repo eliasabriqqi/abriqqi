@@ -110,12 +110,14 @@ h3 {
   line-height: $heading-lh;
 }
 
-h1 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
 .subheading {
   font-style: italic;
+  text-transform: lowercase;
 }
 
 @include set-heading-h1-size($heading-h1-size);
@@ -247,6 +249,14 @@ input[type="submit"] {
   color: $standout-color-tertiary;
 }
 
+.link-btn.link-btn--neutral .link-btn__svg {
+  background-image: url(/src/assets/svg/link-btn/link-btn__svg--neutral.svg);
+}
+
+.link-btn.link-btn--neutral .link-btn__text {
+  color: $font-color-primary;
+}
+
 .readmore-btn__text,
 .link-btn__text {
   margin-left: 1.2rem;
@@ -272,10 +282,18 @@ input[type="submit"] {
 }
 
 .readmore-btn--spacing {
-  margin-top: set-vertical-space-1(
-    $font-size-primary,
-    $line-height-primary
-  );
+  margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.text-link {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  color: $standout-color-quaternary;
+}
+
+.sublink {
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 /* Main Button */
@@ -415,10 +433,7 @@ p.application-form__text {
   }
 
   .readmore-btn--spacing {
-    margin-top: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
+    margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
   }
 
   /* Video */
@@ -545,10 +560,7 @@ p.application-form__text {
   }
 
   .readmore-btn--spacing {
-    margin-top: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
+    margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
   }
 
   .application-form__text-block,
@@ -596,12 +608,8 @@ p.application-form__text {
     font-size: $font-size-primary;
   }
 
-
   .readmore-btn--spacing {
-    margin-top: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
+    margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
   }
 
   p.application-form__text,
@@ -672,10 +680,7 @@ p.application-form__text {
   }
 
   .readmore-btn--spacing {
-    margin-top: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
+    margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
   }
 
   p.application-form__text,
@@ -726,10 +731,14 @@ p.application-form__text {
     background-image: url(/src/assets/svg/socials/light/socials__facebook--62.svg);
   }
 
-  .socials__telegram.dark, .socials__instagram.dark, .socials__facebook.dark,  .socials__telegram.light, .socials__instagram.light, .socials__facebook.light {
+  .socials__telegram.dark,
+  .socials__instagram.dark,
+  .socials__facebook.dark,
+  .socials__telegram.light,
+  .socials__instagram.light,
+  .socials__facebook.light {
     background-repeat: no-repeat;
   }
-
 
   @include set-font-size($font-size-primary);
 
@@ -743,10 +752,7 @@ p.application-form__text {
   }
 
   .readmore-btn--spacing {
-    margin-top: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
+    margin-top: set-vertical-space-1($font-size-primary, $line-height-primary);
   }
 
   p.application-form__text,
