@@ -1,0 +1,276 @@
+/* VARIABLES */
+/* Font Settings */
+/* Standout Colors */
+/* Other Colors */
+/* Header */
+/* MIXINS */
+/* VERTICAL SPACING */
+.foreword-heading--vertical-spacing {
+  margin-top: 13.4rem;
+  margin-bottom: 6rem;
+}
+
+.foreword-content__text:first-of-type p:last-child {
+  margin-bottom: 3rem;
+}
+
+.foreword-content__text:last-of-type p:last-child {
+  margin-bottom: 6rem;
+}
+
+.separator--foreword {
+  margin: 6rem 0;
+}
+
+.foreword-howto-learn__heading h2 {
+  margin-bottom: 6rem;
+}
+
+.foreword-howto-learn h3 {
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.foreword-howto-learn__content-block {
+  margin-bottom: 6rem;
+}
+
+.foreword-howto-learn__pic {
+  margin: 0 -3rem 3rem -3rem;
+  height: 26.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.foreword-howto-learn__copybook .foreword-howto-learn__pic {
+  background-image: url(/src/assets/pics/foreword/xsm/foreword-copybook-xsm-min.webp);
+}
+
+.foreword-howto-learn__oral .foreword-howto-learn__pic {
+  background-image: url(/src/assets/pics/foreword/xsm/foreword-oral-xsm-min.webp);
+}
+
+.foreword-howto-learn__travel .foreword-howto-learn__pic {
+  background-image: url(/src/assets/pics/foreword/xsm/foreword-travel-xsm-min.webp);
+}
+
+.foreword-writetome-block h4 {
+  margin-bottom: 3rem;
+}
+
+.foreword-writetome-block p {
+  margin-bottom: 9rem;
+}
+
+/* Small Screen */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  .foreword-heading--vertical-spacing {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+  }
+  .foreword-content__text:first-of-type p:last-child {
+    margin-bottom: 2.5rem;
+  }
+  .foreword-content__text:last-of-type p:last-child {
+    margin-bottom: 5rem;
+  }
+  .foreword-howto-learn__heading h2 {
+    margin-bottom: 5rem;
+  }
+  .foreword-howto-learn h3 {
+    margin-bottom: 5rem;
+  }
+  .foreword-howto-learn__content-block {
+    margin-bottom: 5rem;
+  }
+  .foreword-howto-learn__pic {
+    margin: 0 -3rem 5rem -3rem;
+    height: 44.9rem;
+  }
+  .foreword-howto-learn__copybook .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/sm/foreword-copybook-sm-min.webp);
+  }
+  .foreword-howto-learn__oral .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/sm/foreword-oral-sm-min.webp);
+  }
+  .foreword-howto-learn__travel .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/sm/foreword-travel-sm-min.webp);
+  }
+  .foreword-writetome-block h4 {
+    margin-bottom: 2.5rem;
+  }
+  .foreword-writetome-block p {
+    margin-bottom: 7.5rem;
+  }
+}
+/* Medium Screen */
+@media only screen and (min-width: 900px) {
+  /* Header */
+  .foreword-heading--vertical-spacing {
+    margin-top: 19.7rem;
+    margin-bottom: 6.75rem;
+  }
+  .foreword-content__text:first-of-type p:last-child,
+  .foreword-content__text:last-of-type p:last-child {
+    margin-bottom: 0;
+  }
+  .foreword__link-btn {
+    height: 0;
+  }
+  .foreword__link-btn .link-btn {
+    position: relative;
+    bottom: 4.3rem;
+  }
+  .separator--foreword {
+    margin: 6.75rem 0 9rem 0;
+  }
+  .foreword-howto-learn__heading h2 {
+    margin: auto;
+    margin-bottom: 9rem;
+  }
+  .foreword-howto-learn__content-block {
+    align-items: center;
+    margin-bottom: 11.25rem;
+  }
+  .foreword-howto-learn h3 {
+    margin-bottom: 2.25rem;
+  }
+  .foreword-howto-learn__pic {
+    margin: 0;
+    grid-row: 1/3;
+    height: 25.7rem;
+  }
+  .foreword-howto-learn__copybook .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/md/foreword-copybook-md-min.webp);
+  }
+  .foreword-howto-learn__oral .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/md/foreword-oral-md-min.webp);
+  }
+  .foreword-howto-learn__travel .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/md/foreword-travel-md-min.webp);
+  }
+  .foreword-writetome-block h4 {
+    margin-bottom: 2.25rem;
+  }
+  .foreword-writetome-block p {
+    margin-bottom: 9rem;
+  }
+}
+/* Large Screen */
+@media only screen and (min-width: 1200px) {
+  /* Header */
+  .foreword-heading--vertical-spacing {
+    margin-top: 23.05rem;
+    margin-bottom: 9rem;
+  }
+  .separator--foreword {
+    margin: 9rem 0 11.25rem 0;
+  }
+  .foreword-howto-learn__heading h2 {
+    margin-bottom: 11.25rem;
+  }
+  .foreword-howto-learn__content-block {
+    margin-bottom: 15.75rem;
+  }
+  .foreword-howto-learn h3 {
+    margin-bottom: 2.25rem;
+  }
+  .foreword-howto-learn__pic {
+    height: 34.8rem;
+  }
+  .foreword-howto-learn__copybook .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/lg/foreword-copybook-lg-min.webp);
+  }
+  .foreword-howto-learn__oral .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/lg/foreword-oral-lg-min.webp);
+  }
+  .foreword-howto-learn__travel .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/lg/foreword-travel-lg-min.webp);
+  }
+  .foreword-writetome-block h4 {
+    margin-bottom: 2.25rem;
+  }
+  .foreword-writetome-block p {
+    margin-bottom: 11.25rem;
+  }
+}
+/* Extra Large Screen */
+@media only screen and (min-width: 1400px) {
+  /* Header */
+  .foreword-heading--vertical-spacing {
+    margin-top: 25.5rem;
+    margin-bottom: 10rem;
+  }
+  .separator--foreword {
+    margin: 10rem 0 12.5rem 0;
+  }
+  .foreword-howto-learn__heading h2 {
+    margin-bottom: 12.5rem;
+  }
+  .foreword-howto-learn__content-block {
+    margin-bottom: 17.5rem;
+  }
+  .foreword-howto-learn h3 {
+    margin-bottom: 2.5rem;
+  }
+  .foreword-howto-learn__pic {
+    height: 39.2rem;
+  }
+  .foreword-howto-learn__copybook .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xl/foreword-copybook-xl-min.webp);
+  }
+  .foreword-howto-learn__oral .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xl/foreword-oral-xl-min.webp);
+  }
+  .foreword-howto-learn__travel .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xl/foreword-travel-xl-min.webp);
+  }
+  .foreword-writetome-block h4 {
+    margin-bottom: 2.5rem;
+  }
+  .foreword-writetome-block p {
+    margin-bottom: 12.5rem;
+  }
+}
+/* Extra Extra Large Screen */
+@media only screen and (min-width: 1800px) {
+  /* Header */
+  .foreword-heading--vertical-spacing {
+    margin-top: 29.15rem;
+    margin-bottom: 11rem;
+  }
+  .separator--foreword {
+    margin: 11rem 0 13.75rem 0;
+  }
+  .foreword-howto-learn__heading h2 {
+    margin-bottom: 13.75rem;
+  }
+  .foreword-howto-learn__content-block {
+    margin-bottom: 19.25rem;
+  }
+  .foreword-howto-learn h3 {
+    margin-bottom: 2.75rem;
+  }
+  .foreword-howto-learn__pic {
+    height: 52.6rem;
+  }
+  .foreword-howto-learn__copybook .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xxl/foreword-copybook-xxl-min.webp);
+  }
+  .foreword-howto-learn__oral .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xxl/foreword-oral-xxl-min.webp);
+  }
+  .foreword-howto-learn__travel .foreword-howto-learn__pic {
+    background-image: url(/src/assets/pics/foreword/xxl/foreword-travel-xxl-min.webp);
+  }
+  .foreword-writetome-block h4 {
+    margin-bottom: 2.75rem;
+  }
+  .foreword-writetome-block p {
+    margin-bottom: 13.75rem;
+  }
+}
+
+/*# sourceMappingURL=foreword.css.map */

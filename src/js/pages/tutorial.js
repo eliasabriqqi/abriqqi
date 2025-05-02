@@ -13,7 +13,7 @@ const content = `<div class="grid-container">
 
 <section class="manual-section grid-container">
 <div
-  class="manual-section__pic col-start-1 col-end-5 col-end-sm-9 col-start-md-2 col-end-md-6 col-end-lg-7"
+  class="manual-section__pic col-start-1 col-end-5 col-end-sm-9 col-start-md-2 col-end-md-6 col-end-lg-7" id="lazy"
 ></div>
 <div
   class="manual-section__content right-block-margin-md col-start-1 col-end-5 col-start-sm-2 col-end-sm-7 col-start-md-6 col-end-md-10 col-start-lg-8 col-end-lg-12 col-end-xxl-11"

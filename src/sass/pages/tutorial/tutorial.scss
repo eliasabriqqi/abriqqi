@@ -72,7 +72,7 @@
 }
 
 .tutorial-about-section__text:first-of-type p:last-child {
-  margin-bottom: $paragraph-mb;
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
 }
 
 /* Small Screen */
