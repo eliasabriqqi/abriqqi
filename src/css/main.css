@@ -129,6 +129,11 @@ h2,
   font-size: 3.8rem;
 }
 
+h3,
+.heading-h3 .subheading {
+  font-size: 3.8rem;
+}
+
 h4 {
   text-transform: uppercase;
   font-size: 2.4rem;
@@ -646,6 +651,10 @@ footer .socials {
   .heading-h2 .subheading {
     font-size: 3.4rem;
   }
+  h3,
+  .heading-h3 .subheading {
+    font-size: 3.4rem;
+  }
   .mobile-visible {
     display: none;
   }
@@ -848,9 +857,16 @@ footer .socials {
   .heading-h2 .subheading {
     font-size: 3.4rem;
   }
+  h3,
+  .heading-h3 .subheading {
+    font-size: 3.4rem;
+  }
   /* Crutch for MD only */
   .right-block-margin-md {
     margin-left: 3.5rem;
+  }
+  .left-block-margin-md {
+    margin-right: 3.5rem;
   }
   /* Video */
   .video-poster {
@@ -1013,6 +1029,10 @@ footer .socials {
   .heading-h2 .subheading {
     font-size: 3.4rem;
   }
+  h3,
+  .heading-h3 .subheading {
+    font-size: 3.4rem;
+  }
   h4 {
     font-size: 2.6rem;
   }
@@ -1032,6 +1052,9 @@ footer .socials {
   /* Crutch for MD only */
   .right-block-margin-md {
     margin-left: 0;
+  }
+  .left-block-margin-md {
+    margin-right: 0;
   }
   /* Large Screen Header */
   nav {
@@ -1102,6 +1125,10 @@ footer .socials {
   }
   h2,
   .heading-h2 .subheading {
+    font-size: 3.8rem;
+  }
+  h3,
+  .heading-h3 .subheading {
     font-size: 3.8rem;
   }
   /* SVG Paths */
@@ -1228,6 +1255,10 @@ footer .socials {
   }
   h2,
   .heading-h2 .subheading {
+    font-size: 4.2rem;
+  }
+  h3,
+  .heading-h3 .subheading {
     font-size: 4.2rem;
   }
   /* SVG Paths */

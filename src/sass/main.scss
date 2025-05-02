@@ -122,6 +122,7 @@ h2 {
 
 @include set-heading-h1-size($heading-h1-size);
 @include set-heading-h2-size($heading-h2-size);
+@include set-heading-h3-size($heading-h3-size);
 
 h4 {
   text-transform: uppercase;
@@ -394,6 +395,7 @@ p.application-form__text {
   @include set-paragraph-mb($font-size-primary, $line-height-primary);
   @include set-heading-h1-size($heading-h1-size);
   @include set-heading-h2-size($heading-h2-size);
+  @include set-heading-h3-size($heading-h3-size);
 
   .mobile-visible {
     display: none;
@@ -503,11 +505,16 @@ p.application-form__text {
   @include set-paragraph-mb($font-size-primary, $line-height-primary);
   @include set-heading-h1-size($heading-h1-size);
   @include set-heading-h2-size($heading-h2-size);
+  @include set-heading-h3-size($heading-h3-size);
 
   /* Crutch for MD only */
 
   .right-block-margin-md {
     margin-left: 3.5rem;
+  }
+
+  .left-block-margin-md {
+    margin-right: 3.5rem;
   }
 
   // Crutch end
@@ -598,6 +605,7 @@ p.application-form__text {
   @include set-paragraph-mb($font-size-primary, $line-height-primary);
   @include set-heading-h1-size($heading-h1-size);
   @include set-heading-h2-size($heading-h2-size);
+  @include set-heading-h3-size($heading-h3-size);
 
   h4 {
     font-size: 2.6rem;
@@ -628,6 +636,10 @@ p.application-form__text {
     margin-left: 0;
   }
 
+  .left-block-margin-md {
+    margin-right: 0;
+  }
+
   // Crutch end
 
   @import "header/header-lg";
@@ -641,6 +653,7 @@ p.application-form__text {
   @include set-paragraph-mb($font-size-primary, $line-height-primary);
   @include set-heading-h1-size($heading-h1-size);
   @include set-heading-h2-size($heading-h2-size);
+  @include set-heading-h3-size($heading-h3-size);
 
   /* SVG Paths */
 
@@ -704,6 +717,7 @@ p.application-form__text {
   @include set-paragraph-mb($font-size-primary, $line-height-primary);
   @include set-heading-h1-size($heading-h1-size);
   @include set-heading-h2-size($heading-h2-size);
+  @include set-heading-h3-size($heading-h3-size);
 
   /* SVG Paths */
 
