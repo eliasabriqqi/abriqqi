@@ -1,0 +1,499 @@
+/* VARIABLES */
+
+@import "../../variables/variables";
+
+.cool {
+  margin-top: 100rem;
+}
+
+.online-course-heading--vertical-spacing {
+  margin: calc(
+      set-vertical-space-2($font-size-primary, $line-height-primary) +
+        $nav-height
+    )
+    0 set-vertical-space-1($font-size-primary, $line-height-primary) 0;
+}
+
+.online-course-heading .heading-h1 {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.phone-num-tag {
+  display: none;
+}
+
+.online-course__video-poster {
+  height: 49.2rem;
+  background-image: url(/src/assets/pics/online-course__video-poster/xsm/online-course__video-poster-xsm-min.webp);
+}
+
+.advantages-section .abriqqi-slider__pic {
+  height: 30.5rem;
+  background-image: url(/src/assets/pics/online-course-slider/xsm/online-course-slider__pic-xsm-1-min.webp);
+}
+
+/* Accordion */
+
+.abriqqi-accordion {
+  margin-bottom: set-vertical-space-5($font-size-primary, $line-height-primary);
+  position: relative;
+}
+
+.course-description .abriqqi-accordion__bg {
+  margin: 0 -3rem;
+  height: 66.2rem;
+  background-image: url(/src/assets/pics/online-course-description/xsm/online-course-description-xsm-min.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course-description .abriqqi-accordion__content {
+  position: absolute;
+  width: 100%;
+  padding: set-vertical-space-2($font-size-primary, $line-height-primary) 3rem
+    set-vertical-space-1($font-size-primary, $line-height-primary) 3rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 30px;
+}
+
+.abriqqi-accordion__item {
+  border-bottom: 1px solid $line-color-primary;
+  padding-bottom: set-vertical-space-1(
+    $font-size-primary,
+    $line-height-primary
+  );
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.abriqqi-accordion__item__heading {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-size: 2.6rem;
+}
+
+.abriqqi-accordion__item__heading:last-child {
+  margin-bottom: 0;
+}
+
+.online-course__main-btn--mb {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+/* Video Proof */
+
+.video-proof-section .abriqqi-slider__pic {
+  height: 22.1rem;
+  background-image: url(/src/assets/pics/video-proof/xsm/video-proof__lera-xsm-min.webp);
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../../variables/variables-sm";
+
+  .online-course-heading--vertical-spacing {
+    margin: calc(
+        set-vertical-space-2($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-2($font-size-primary, $line-height-primary) 0;
+  }
+
+  .online-course-heading .heading-h1 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .online-course__video-poster {
+    height: 84.1rem;
+    background-image: url(/src/assets/pics/online-course__video-poster/sm/online-course__video-poster-sm-min.webp);
+  }
+
+  .advantages-section .abriqqi-slider__pic {
+    height: 35.5rem;
+    background-image: url(/src/assets/pics/online-course-slider/sm/online-course-slider__pic-sm-1-min.webp);
+  }
+
+  /* Accordion */
+
+  .abriqqi-accordion {
+    margin-bottom: set-vertical-space-5(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .course-description .abriqqi-accordion__bg {
+    margin: 0;
+    height: 70rem;
+    background-image: url(/src/assets/pics/online-course-description/sm/online-course-description-sm-min.webp);
+  }
+
+  .course-description .abriqqi-accordion__content {
+    padding: set-vertical-space-2($font-size-primary, $line-height-primary) 4rem
+      set-vertical-space-1($font-size-primary, $line-height-primary) 4rem;
+  }
+
+  .abriqqi-accordion__item {
+    padding-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .abriqqi-accordion__item__heading {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video Proof */
+
+  .video-proof-section .abriqqi-slider__pic {
+    height: 37.8rem;
+    background-image: url(/src/assets/pics/video-proof/sm/video-proof__lera-sm-min.webp);
+  }
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../../variables/variables-md";
+
+  .online-course-heading--vertical-spacing {
+    margin: calc(
+        set-vertical-space-4($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-4($font-size-primary, $line-height-primary) 0;
+  }
+
+  .phone-num-tag {
+    display: flex;
+  }
+
+  .online-course__video {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .online-course__video-poster {
+    height: 51.7rem;
+    background-image: url(/src/assets/pics/online-course__video-poster/md/online-course__video-poster-md-min.webp);
+  }
+
+  .abriqqi-slider {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .advantages-section .abriqqi-slider__pic {
+    height: 30rem;
+    background-image: url(/src/assets/pics/online-course-slider/md/online-course-slider__pic-md-1-min.webp);
+  }
+
+  /* Accordion */
+
+  .abriqqi-accordion {
+    margin-bottom: set-vertical-space-6(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .course-description .abriqqi-accordion__bg {
+    height: 66.2rem;
+    background-image: url(/src/assets/pics/online-course-description/md/online-course-description-md-min.webp);
+  }
+
+  .course-description .abriqqi-accordion__content {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: set-vertical-space-2($font-size-primary, $line-height-primary)
+      5.3rem set-vertical-space-1($font-size-primary, $line-height-primary)
+      5.3rem;
+  }
+
+  .abriqqi-accordion__item {
+    padding-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .abriqqi-accordion__item__heading {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video Proof */
+
+  .video-proof-section .abriqqi-slider__pic {
+    height: 21.6rem;
+    background-image: url(/src/assets/pics/video-proof/md/video-proof__lera-md-min.webp);
+  }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../../variables/variables-lg";
+
+  .online-course-heading--vertical-spacing {
+    margin: calc(
+        set-vertical-space-5($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-5($font-size-primary, $line-height-primary) 0;
+  }
+
+  .online-course__video {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .online-course__video-poster {
+    height: 66.7rem;
+    background-image: url(/src/assets/pics/online-course__video-poster/lg/online-course__video-poster-lg-min.webp);
+  }
+
+  .abriqqi-slider {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .advantages-section .abriqqi-slider__pic {
+    height: 40.7rem;
+    background-image: url(/src/assets/pics/online-course-slider/lg/online-course-slider__pic-lg-1-min.webp);
+  }
+
+  /* Accordion */
+
+  .abriqqi-accordion {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .course-description .abriqqi-accordion__bg {
+    height: 71.2rem;
+    background-image: url(/src/assets/pics/online-course-description/lg/online-course-description-lg-min.webp);
+  }
+
+  .course-description .abriqqi-accordion__content {
+    padding: set-vertical-space-2($font-size-primary, $line-height-primary)
+      6.4rem set-vertical-space-1($font-size-primary, $line-height-primary)
+      6.4rem;
+  }
+
+  .abriqqi-accordion__item {
+    padding-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .abriqqi-accordion__item__heading {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video Proof */
+
+  .video-proof-section .abriqqi-slider__pic {
+    height: 29.4rem;
+    background-image: url(/src/assets/pics/video-proof/lg/video-proof__lera-lg-min.webp);
+  }
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../../variables/variables-xl";
+
+  .online-course-heading--vertical-spacing {
+    margin: calc(
+        set-vertical-space-5($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-5($font-size-primary, $line-height-primary) 0;
+  }
+
+  .online-course__video {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .online-course__video-poster {
+    height: 75rem;
+    background-image: url(/src/assets/pics/online-course__video-poster/xl/online-course__video-poster-xl-min.webp);
+  }
+
+  .abriqqi-slider {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .advantages-section .abriqqi-slider__pic {
+    height: 45.8rem;
+    background-image: url(/src/assets/pics/online-course-slider/xl/online-course-slider__pic-xl-1-min.webp);
+  }
+
+  /* Accordion */
+
+  .abriqqi-accordion {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .course-description .abriqqi-accordion__bg {
+    height: 79.8rem;
+    background-image: url(/src/assets/pics/online-course-description/xl/online-course-description-xl-min.webp);
+  }
+
+  .course-description .abriqqi-accordion__content {
+    padding: set-vertical-space-2($font-size-primary, $line-height-primary) 7rem
+      set-vertical-space-1($font-size-primary, $line-height-primary) 7rem;
+  }
+
+  .abriqqi-accordion__item {
+    padding-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .abriqqi-accordion__item__heading {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video Proof */
+
+  .video-proof-section .abriqqi-slider__pic {
+    height: 33.5rem;
+    background-image: url(/src/assets/pics/video-proof/xl/video-proof__lera-xl-min.webp);
+  }
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../../variables/variables-xxl";
+
+  .online-course-heading--vertical-spacing {
+    margin: calc(
+        set-vertical-space-5($font-size-primary, $line-height-primary) +
+          $nav-height
+      )
+      0 set-vertical-space-5($font-size-primary, $line-height-primary) 0;
+  }
+
+  .online-course__video {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .online-course__video-poster {
+    height: 100rem;
+    background-image: url(/src/assets/pics/online-course__video-poster/xxl/online-course__video-poster-xxl-min.webp);
+  }
+
+  .abriqqi-slider {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .advantages-section .abriqqi-slider__pic {
+    height: 59.9rem;
+    background-image: url(/src/assets/pics/online-course-slider/xxl/online-course-slider__pic-xxl-1-min.webp);
+  }
+
+  /* Accordion */
+
+  .abriqqi-accordion {
+    margin-bottom: set-vertical-space-7(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .course-description .abriqqi-accordion__bg {
+    height: 86.7rem;
+    background-image: url(/src/assets/pics/online-course-description/xxl/online-course-description-xxl-min.webp);
+  }
+
+  .course-description .abriqqi-accordion__content {
+    padding: set-vertical-space-2($font-size-primary, $line-height-primary)
+      7.6rem set-vertical-space-1($font-size-primary, $line-height-primary)
+      7.6rem;
+  }
+
+  .abriqqi-accordion__item {
+    padding-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .abriqqi-accordion__item__heading {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  /* Video Proof */
+
+  .video-proof-section .abriqqi-slider__pic {
+    height: 44.8rem;
+    background-image: url(/src/assets/pics/video-proof/xxl/video-proof__lera-xxl-min.webp);
+  }
+}
