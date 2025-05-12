@@ -5,10 +5,10 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "compile:sass": "sass src/sass/main.scss src/css/main.css -w",
-    "compile:content": "sass src/sass/pages/foreword/foreword.scss src/css/foreword.css -w"
+    "compile:content": "sass src/sass/pages/online-course/online-course.scss src/css/online-course.css -w"
   },
   "devDependencies": {
     "sass": "^1.85.1"

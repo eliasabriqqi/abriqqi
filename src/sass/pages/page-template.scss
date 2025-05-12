@@ -1,0 +1,33 @@
+/* VARIABLES */
+
+@import "../../variables/variables";
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../../variables/variables-sm";
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../../variables/variables-md";
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../../variables/variables-lg";
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../../variables/variables-xl";
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../../variables/variables-xxl";
+}

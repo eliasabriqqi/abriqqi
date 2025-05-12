@@ -332,6 +332,7 @@ input[type=submit] {
   opacity: 0.9;
 }
 
+/* Phone Number Tag */
 /* Separator */
 .separator {
   margin-bottom: 6rem;
@@ -380,6 +381,88 @@ p.application-form__text {
 
 .application-form input[type=submit]:hover {
   opacity: 0.8;
+}
+
+/* Slider */
+.slider--dark {
+  margin: 0 -3rem;
+  padding: 0 3rem;
+  background-color: #181818;
+  color: rgb(231, 231, 231);
+}
+
+.abriqqi-slider {
+  padding-bottom: 6rem;
+}
+
+.abriqqi-slider .slide {
+  align-items: center;
+}
+
+.abriqqi-slider,
+.abriqqi-slider .slide,
+.slider-track {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.abriqqi-slider .overheading {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-style: italic;
+}
+
+.abriqqi-slider .slide__text {
+  padding: 6rem 0;
+}
+
+.abriqqi-slider h2 {
+  margin-bottom: 3rem;
+  text-transform: unset;
+}
+
+.abriqqi-slider__pic {
+  margin: 0 -3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abriqqi-slider__btn-left,
+.abriqqi-slider__btn-right {
+  margin-top: 3rem;
+  justify-self: end;
+  width: 5.7rem;
+  height: 5.7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abriqqi-slider__btn-left {
+  background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-left--mobile.svg);
+  grid-column: 3;
+}
+
+.abriqqi-slider__btn-right {
+  background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-right--mobile.svg);
+  grid-column: 4;
+}
+
+/* Whatsapp Icon */
+.whatsapp-icon,
+.whatsapp-icon--green {
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whatsapp-icon {
+  background-image: url(/src/assets/svg/phone-num/whatsapp-icon.svg);
+}
+
+.whatsapp-icon--green {
+  background-image: url(/src/assets/svg/phone-num/whatsapp-icon--green.svg);
 }
 
 /* Header Import */
@@ -678,6 +761,11 @@ footer .socials {
     padding-left: 2.2rem;
     border-left: 0.8rem solid #f2c47f;
   }
+  .heading-attch {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    border: 1px solid #f2c47f;
+  }
   .main-btn {
     width: fit-content;
     padding: 1.5rem;
@@ -704,10 +792,23 @@ footer .socials {
   .video-poster .play-btn {
     margin: 0 9rem 7.5rem 0;
   }
+  /* Phone Number Tag */
+  .phone-num-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 0.6rem;
+    background-color: #f2c47f;
+  }
+  .phone-num {
+    font-size: 2.2rem;
+  }
   /* Separator */
   .separator {
     margin-bottom: 5rem;
   }
+  /* Application Form */
   .application-form h3 {
     margin-bottom: 2.5rem;
   }
@@ -717,6 +818,33 @@ footer .socials {
   }
   p.application-form__text {
     margin-bottom: 5rem;
+  }
+  /* Slider */
+  .abriqqi-slider {
+    padding-bottom: 5rem;
+  }
+  .slider--dark {
+    margin: 0;
+  }
+  .abriqqi-slider .overheading {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+  }
+  .abriqqi-slider .slide__text {
+    margin-bottom: 5rem;
+  }
+  .abriqqi-slider__pic {
+    margin: 0;
+  }
+  .abriqqi-slider__btn-left,
+  .abriqqi-slider__btn-right {
+    margin-top: 2.5rem;
+  }
+  .abriqqi-slider__btn-left {
+    grid-column: 6;
+  }
+  .abriqqi-slider__btn-right {
+    grid-column: 7;
   }
   /* Header Import */
   /* Small Screen Header */
@@ -921,6 +1049,56 @@ footer .socials {
   .application-form h3 {
     margin-bottom: 2.25rem;
   }
+  /* Slider */
+  .abriqqi-slider {
+    position: relative;
+    padding-bottom: 0;
+  }
+  .slider--dark {
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+    color: unset;
+  }
+  .abriqqi-slider .slide__text {
+    margin-bottom: 0;
+  }
+  .abriqqi-slider__pic {
+    margin: 0;
+  }
+  .abriqqi-slider__btn-left,
+  .abriqqi-slider__btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    width: 1.1rem;
+    height: 1.8rem;
+    cursor: pointer;
+  }
+  .abriqqi-slider__btn-left:hover,
+  .abriqqi-slider__btn-right:hover {
+    opacity: 0.7;
+  }
+  .abriqqi-slider__btn-left {
+    background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-left--desktop.svg);
+    grid-column: 1;
+    left: 5rem;
+  }
+  .abriqqi-slider__btn-left::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5vw;
+    border-right: 1px solid gray;
+  }
+  .abriqqi-slider__btn-right {
+    right: 5rem;
+    background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-right--desktop.svg);
+  }
   /* Header Import */
   /* Medium Screen Header */
   nav {
@@ -1055,6 +1233,13 @@ footer .socials {
   }
   .left-block-margin-md {
     margin-right: 0;
+  }
+  /* Phone Number Tag */
+  .phone-num-tag {
+    padding: 1.5rem;
+  }
+  .phone-num {
+    font-size: 3.4rem;
   }
   /* Large Screen Header */
   nav {
