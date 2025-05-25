@@ -28,7 +28,18 @@
 
 .advantages-section .abriqqi-slider__pic {
   height: 30.5rem;
+}
+
+.advantages-section .slider-pic1 {
   background-image: url(/src/assets/pics/online-course-slider/xsm/online-course-slider__pic-xsm-1-min.webp);
+}
+
+.advantages-section .slider-pic2 {
+  background-image: url(/src/assets/pics/online-course-slider/xsm/online-course-slider__pic-xsm-2-min.webp);
+}
+
+.advantages-section .slider-pic3 {
+  background-image: url(/src/assets/pics/online-course-slider/xsm/online-course-slider__pic-xsm-3-min.webp);
 }
 
 /* Accordion */
@@ -53,29 +64,59 @@
   box-shadow: 1px 1px 30px;
 }
 
-.abriqqi-accordion__item {
-  border-bottom: 1px solid #e2e2e2;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-}
-
 .abriqqi-accordion__item__heading {
   margin-bottom: 3rem;
   font-size: 2.6rem;
+  cursor: pointer;
 }
 
 .abriqqi-accordion__item__heading:last-child {
   margin-bottom: 0;
 }
 
-.online-course__main-btn--mb {
+.abriqqi-accordion__item__text {
+  display: block;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+}
+
+.abriqqi-accordion__item__text--visible {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.abriqqi-accordion__item__text--visible:last-child {
+  margin-bottom: 3rem;
+}
+
+.online-course__main-btn {
   margin-bottom: 6rem;
 }
 
 /* Video Proof */
+.video-proof-section .abriqqi-slider {
+  margin-bottom: 6rem;
+}
+
 .video-proof-section .abriqqi-slider__pic {
   height: 22.1rem;
+}
+
+.video-proof-section .slider-pic1 {
   background-image: url(/src/assets/pics/video-proof/xsm/video-proof__lera-xsm-min.webp);
+}
+
+.video-proof-section .slider-pic2 {
+  background-image: url(/src/assets/pics/video-proof/xsm/video-proof__zhenya-xsm-min.webp);
+}
+
+.video-proof-section .slider-pic3 {
+  background-image: url(/src/assets/pics/video-proof/xsm/video-proof__pasha-xsm-min.webp);
+}
+
+.application-form--online--course {
+  margin-bottom: 9rem;
 }
 
 /* Small Screen */
@@ -93,11 +134,19 @@
   }
   .advantages-section .abriqqi-slider__pic {
     height: 35.5rem;
+  }
+  .advantages-section .slider-pic1 {
     background-image: url(/src/assets/pics/online-course-slider/sm/online-course-slider__pic-sm-1-min.webp);
+  }
+  .advantages-section .slider-pic2 {
+    background-image: url(/src/assets/pics/online-course-slider/sm/online-course-slider__pic-sm-2-min.webp);
+  }
+  .advantages-section .slider-pic3 {
+    background-image: url(/src/assets/pics/online-course-slider/xsm/online-course-slider__pic-xsm-3-min.webp);
   }
   /* Accordion */
   .abriqqi-accordion {
-    margin-bottom: 12.5rem;
+    margin-bottom: 5rem;
   }
   .course-description .abriqqi-accordion__bg {
     margin: 0;
@@ -107,17 +156,37 @@
   .course-description .abriqqi-accordion__content {
     padding: 5rem 4rem 2.5rem 4rem;
   }
-  .abriqqi-accordion__item {
-    padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
   .abriqqi-accordion__item__heading {
     margin-bottom: 2.5rem;
   }
+  .abriqqi-accordion__item__text--visible {
+    padding-bottom: 2.5rem;
+  }
+  .abriqqi-accordion__item__text--visible:last-child {
+    margin-bottom: 2.5rem;
+  }
+  .online-course__main-btn {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
   /* Video Proof */
+  .video-proof-section .abriqqi-slider {
+    margin-bottom: 7.5rem;
+  }
   .video-proof-section .abriqqi-slider__pic {
     height: 37.8rem;
+  }
+  .video-proof-section .slider-pic1 {
     background-image: url(/src/assets/pics/video-proof/sm/video-proof__lera-sm-min.webp);
+  }
+  .video-proof-section .slider-pic2 {
+    background-image: url(/src/assets/pics/video-proof/sm/video-proof__zhenya-sm-min.webp);
+  }
+  .video-proof-section .slider-pic3 {
+    background-image: url(/src/assets/pics/video-proof/sm/video-proof__pasha-sm-min.webp);
+  }
+  .application-form--online--course {
+    margin-bottom: 7.5rem;
   }
 }
 /* Medium Screen */
@@ -136,12 +205,20 @@
     height: 51.7rem;
     background-image: url(/src/assets/pics/online-course__video-poster/md/online-course__video-poster-md-min.webp);
   }
-  .abriqqi-slider {
+  .advantages-section .abriqqi-slider {
     margin-bottom: 13.5rem;
   }
   .advantages-section .abriqqi-slider__pic {
     height: 30rem;
+  }
+  .advantages-section .slider-pic1 {
     background-image: url(/src/assets/pics/online-course-slider/md/online-course-slider__pic-md-1-min.webp);
+  }
+  .advantages-section .slider-pic2 {
+    background-image: url(/src/assets/pics/online-course-slider/md/online-course-slider__pic-md-2-min.webp);
+  }
+  .advantages-section .slider-pic3 {
+    background-image: url(/src/assets/pics/online-course-slider/md/online-course-slider__pic-md-3-min.webp);
   }
   /* Accordion */
   .abriqqi-accordion {
@@ -156,17 +233,36 @@
     transform: translateY(-50%);
     padding: 4.5rem 5.3rem 2.25rem 5.3rem;
   }
-  .abriqqi-accordion__item {
-    padding-bottom: 2.25rem;
-    margin-bottom: 2.25rem;
-  }
   .abriqqi-accordion__item__heading {
     margin-bottom: 2.25rem;
   }
+  .abriqqi-accordion__item__text--visible {
+    padding-bottom: 2.25rem;
+  }
+  .abriqqi-accordion__item__text--visible:last-child {
+    margin-bottom: 2.25rem;
+  }
+  .online-course__main-btn {
+    display: none;
+  }
   /* Video Proof */
+  .video-proof-section .abriqqi-slider {
+    margin-bottom: 13.5rem;
+  }
   .video-proof-section .abriqqi-slider__pic {
     height: 21.6rem;
+  }
+  .video-proof-section .slider-pic1 {
     background-image: url(/src/assets/pics/video-proof/md/video-proof__lera-md-min.webp);
+  }
+  .video-proof-section .slider-pic2 {
+    background-image: url(/src/assets/pics/video-proof/md/video-proof__zhenya-md-min.webp);
+  }
+  .video-proof-section .slider-pic3 {
+    background-image: url(/src/assets/pics/video-proof/md/video-proof__pasha-md-min.webp);
+  }
+  .application-form--online--course {
+    margin-bottom: 13.5rem;
   }
 }
 /* Large Screen */
@@ -182,12 +278,20 @@
     height: 66.7rem;
     background-image: url(/src/assets/pics/online-course__video-poster/lg/online-course__video-poster-lg-min.webp);
   }
-  .abriqqi-slider {
+  .advantages-section .abriqqi-slider {
     margin-bottom: 15.75rem;
   }
   .advantages-section .abriqqi-slider__pic {
     height: 40.7rem;
+  }
+  .advantages-section .slider-pic1 {
     background-image: url(/src/assets/pics/online-course-slider/lg/online-course-slider__pic-lg-1-min.webp);
+  }
+  .advantages-section .slider-pic2 {
+    background-image: url(/src/assets/pics/online-course-slider/lg/online-course-slider__pic-lg-2-min.webp);
+  }
+  .advantages-section .slider-pic3 {
+    background-image: url(/src/assets/pics/online-course-slider/lg/online-course-slider__pic-lg-3-min.webp);
   }
   /* Accordion */
   .abriqqi-accordion {
@@ -200,17 +304,33 @@
   .course-description .abriqqi-accordion__content {
     padding: 4.5rem 6.4rem 2.25rem 6.4rem;
   }
-  .abriqqi-accordion__item {
-    padding-bottom: 2.25rem;
-    margin-bottom: 2.25rem;
-  }
   .abriqqi-accordion__item__heading {
     margin-bottom: 2.25rem;
   }
+  .abriqqi-accordion__item__text--visible {
+    padding-bottom: 2.25rem;
+  }
+  .abriqqi-accordion__item__text--visible:last-child {
+    margin-bottom: 2.25rem;
+  }
   /* Video Proof */
+  .video-proof-section .abriqqi-slider {
+    margin-bottom: 15.75rem;
+  }
   .video-proof-section .abriqqi-slider__pic {
-    height: 29.4rem;
+    height: 29.3rem;
+  }
+  .video-proof-section .slider-pic1 {
     background-image: url(/src/assets/pics/video-proof/lg/video-proof__lera-lg-min.webp);
+  }
+  .video-proof-section .slider-pic2 {
+    background-image: url(/src/assets/pics/video-proof/lg/video-proof__zhenya-lg-min.webp);
+  }
+  .video-proof-section .slider-pic3 {
+    background-image: url(/src/assets/pics/video-proof/lg/video-proof__pasha-lg-min.webp);
+  }
+  .application-form--online--course {
+    margin-bottom: 15.75rem;
   }
 }
 /* Extra Large Screen */
@@ -226,12 +346,20 @@
     height: 75rem;
     background-image: url(/src/assets/pics/online-course__video-poster/xl/online-course__video-poster-xl-min.webp);
   }
-  .abriqqi-slider {
+  .advantages-section .abriqqi-slider {
     margin-bottom: 17.5rem;
   }
   .advantages-section .abriqqi-slider__pic {
     height: 45.8rem;
+  }
+  .advantages-section .slider-pic1 {
     background-image: url(/src/assets/pics/online-course-slider/xl/online-course-slider__pic-xl-1-min.webp);
+  }
+  .advantages-section .slider-pic2 {
+    background-image: url(/src/assets/pics/online-course-slider/xl/online-course-slider__pic-xl-2-min.webp);
+  }
+  .advantages-section .slider-pic3 {
+    background-image: url(/src/assets/pics/online-course-slider/xl/online-course-slider__pic-xl-3-min.webp);
   }
   /* Accordion */
   .abriqqi-accordion {
@@ -244,17 +372,33 @@
   .course-description .abriqqi-accordion__content {
     padding: 5rem 7rem 2.5rem 7rem;
   }
-  .abriqqi-accordion__item {
-    padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
   .abriqqi-accordion__item__heading {
     margin-bottom: 2.5rem;
   }
+  .abriqqi-accordion__item__text--visible {
+    padding-bottom: 2.5rem;
+  }
+  .abriqqi-accordion__item__text--visible:last-child {
+    margin-bottom: 2.5rem;
+  }
   /* Video Proof */
+  .video-proof-section .abriqqi-slider {
+    margin-bottom: 17.5rem;
+  }
   .video-proof-section .abriqqi-slider__pic {
-    height: 33.5rem;
+    height: 33.1rem;
+  }
+  .video-proof-section .slider-pic1 {
     background-image: url(/src/assets/pics/video-proof/xl/video-proof__lera-xl-min.webp);
+  }
+  .video-proof-section .slider-pic2 {
+    background-image: url(/src/assets/pics/video-proof/xl/video-proof__zhenya-xl-min.webp);
+  }
+  .video-proof-section .slider-pic3 {
+    background-image: url(/src/assets/pics/video-proof/xl/video-proof__pasha-xl-min.webp);
+  }
+  .application-form--online--course {
+    margin-bottom: 17.5rem;
   }
 }
 /* Extra Extra Large Screen */
@@ -270,12 +414,20 @@
     height: 100rem;
     background-image: url(/src/assets/pics/online-course__video-poster/xxl/online-course__video-poster-xxl-min.webp);
   }
-  .abriqqi-slider {
+  .advantages-section .abriqqi-slider {
     margin-bottom: 19.25rem;
   }
   .advantages-section .abriqqi-slider__pic {
     height: 59.9rem;
+  }
+  .advantages-section .slider-pic1 {
     background-image: url(/src/assets/pics/online-course-slider/xxl/online-course-slider__pic-xxl-1-min.webp);
+  }
+  .advantages-section .slider-pic2 {
+    background-image: url(/src/assets/pics/online-course-slider/xxl/online-course-slider__pic-xxl-2-min.webp);
+  }
+  .advantages-section .slider-pic3 {
+    background-image: url(/src/assets/pics/online-course-slider/xxl/online-course-slider__pic-xxl-3-min.webp);
   }
   /* Accordion */
   .abriqqi-accordion {
@@ -288,17 +440,33 @@
   .course-description .abriqqi-accordion__content {
     padding: 5.5rem 7.6rem 2.75rem 7.6rem;
   }
-  .abriqqi-accordion__item {
-    padding-bottom: 2.75rem;
-    margin-bottom: 2.75rem;
-  }
   .abriqqi-accordion__item__heading {
     margin-bottom: 2.75rem;
   }
+  .abriqqi-accordion__item__text--visible {
+    padding-bottom: 2.75rem;
+  }
+  .abriqqi-accordion__item__text--visible:last-child {
+    margin-bottom: 2.75rem;
+  }
   /* Video Proof */
+  .video-proof-section .abriqqi-slider {
+    margin-bottom: 19.25rem;
+  }
   .video-proof-section .abriqqi-slider__pic {
-    height: 44.8rem;
+    height: 44.3rem;
+  }
+  .video-proof-section .slider-pic1 {
     background-image: url(/src/assets/pics/video-proof/xxl/video-proof__lera-xxl-min.webp);
+  }
+  .video-proof-section .slider-pic2 {
+    background-image: url(/src/assets/pics/video-proof/xxl/video-proof__zhenya-xxl-min.webp);
+  }
+  .video-proof-section .slider-pic3 {
+    background-image: url(/src/assets/pics/video-proof/xxl/video-proof__pasha-xxl-min.webp);
+  }
+  .application-form--online--course {
+    margin-bottom: 19.25rem;
   }
 }
 

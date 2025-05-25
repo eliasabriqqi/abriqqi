@@ -372,6 +372,12 @@ p.application-form__text {
   outline: 0;
 }
 
+.application-form__submit {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .application-form input[type=submit] {
   text-transform: uppercase;
   color: #deb374;
@@ -393,10 +399,18 @@ p.application-form__text {
 
 .abriqqi-slider {
   padding-bottom: 6rem;
+  overflow: hidden;
+}
+
+.slider-track {
+  transform: translateX(0%);
+  transition: transform 0.5s;
 }
 
 .abriqqi-slider .slide {
+  position: relative;
   align-items: center;
+  grid-row: 1;
 }
 
 .abriqqi-slider,
@@ -422,6 +436,9 @@ p.application-form__text {
 }
 
 .abriqqi-slider__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 -3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -783,14 +800,9 @@ footer .socials {
     display: none;
   }
   .video-poster {
-    justify-content: end;
-    align-items: flex-end;
     margin: 0;
     grid-row: 1;
     z-index: 1;
-  }
-  .video-poster .play-btn {
-    margin: 0 9rem 7.5rem 0;
   }
   /* Phone Number Tag */
   .phone-num-tag {
@@ -828,7 +840,7 @@ footer .socials {
   }
   .abriqqi-slider .overheading {
     margin-bottom: 0;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .abriqqi-slider .slide__text {
     margin-bottom: 5rem;
@@ -996,14 +1008,6 @@ footer .socials {
   .left-block-margin-md {
     margin-right: 3.5rem;
   }
-  /* Video */
-  .video-poster {
-    justify-content: center;
-    align-items: center;
-  }
-  .video-poster .play-btn {
-    margin: 0;
-  }
   /* SVG Paths */
   .socials__telegram.dark {
     background-image: url(/src/assets/svg/socials/dark/socials__telegram--52.svg);
@@ -1072,18 +1076,21 @@ footer .socials {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 0;
-    width: 1.1rem;
-    height: 1.8rem;
+    width: 10vw;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
     cursor: pointer;
-  }
-  .abriqqi-slider__btn-left:hover,
-  .abriqqi-slider__btn-right:hover {
-    opacity: 0.7;
   }
   .abriqqi-slider__btn-left {
     background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-left--desktop.svg);
     grid-column: 1;
-    left: 5rem;
+    left: 0;
+  }
+  .abriqqi-slider__btn-left:hover {
+    background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-left--desktop-hovered.svg);
   }
   .abriqqi-slider__btn-left::after {
     content: "";
@@ -1092,12 +1099,15 @@ footer .socials {
     height: 200px;
     top: 50%;
     transform: translateY(-50%);
-    left: 5vw;
+    left: 10vw;
     border-right: 1px solid gray;
   }
   .abriqqi-slider__btn-right {
-    right: 5rem;
+    right: 0;
     background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-right--desktop.svg);
+  }
+  .abriqqi-slider__btn-right:hover {
+    background-image: url(/src/assets/svg/abriqqi-slider/abriqqi-slider__btn-right--desktop-hovered.svg);
   }
   /* Header Import */
   /* Medium Screen Header */
