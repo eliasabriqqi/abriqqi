@@ -1,0 +1,273 @@
+/* VARIABLES */
+
+@import "../../variables/variables";
+
+.tutorial-contents__heading {
+  margin-top: calc(
+    set-vertical-space-2($font-size-primary, $line-height-primary) + $nav-height
+  );
+
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.tutorial-contents__intro-link {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.tutorial-contents__section-block {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.tutorial-contents__section h3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.tutorial-contents__section ul {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.tutorial-contents__section-block:last-of-type,
+.tutorial-contents__section hr,
+.page-bottom-nav {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../../variables/variables-sm";
+
+  .tutorial-contents__heading {
+    margin-top: calc(
+      set-vertical-space-2($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__intro-link {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block {
+    grid-column-end: 9;
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section h3 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section ul {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+
+  .page-bottom-nav,
+  .tutorial-contents__section-block:last-of-type,
+  .tutorial-contents__section hr {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../../variables/variables-md";
+
+  .tutorial-contents__heading {
+    margin-top: calc(
+      set-vertical-space-4($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__intro-link {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block {
+    grid-column-end: 11;
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section h3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-bottom: 0;
+  }
+
+  .tutorial-contents__section ul {
+    grid-column-start: 4;
+    grid-column-end: 10;
+  }
+
+  .tutorial-contents__section-block:last-of-type,
+  .tutorial-contents__section hr,
+  .page-bottom-nav {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../../variables/variables-lg";
+
+  .tutorial-contents__heading {
+    margin-top: calc(
+      set-vertical-space-5($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+
+    margin-bottom: set-vertical-space-5(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__intro-link {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block {
+    grid-column-end: 13;
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block:last-of-type,
+  .tutorial-contents__section hr,
+  .page-bottom-nav {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../../variables/variables-xl";
+
+  .tutorial-contents__heading {
+    margin-top: calc(
+      set-vertical-space-5($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+
+    margin-bottom: set-vertical-space-5(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__intro-link {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block:last-of-type,
+  .tutorial-contents__section hr,
+  .page-bottom-nav {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../../variables/variables-xxl";
+
+  .tutorial-contents__heading {
+    margin-top: calc(
+      set-vertical-space-5($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+
+    margin-bottom: set-vertical-space-5(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__intro-link {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block {
+    margin-bottom: set-vertical-space-3(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .tutorial-contents__section-block:last-of-type,
+  .tutorial-contents__section hr,
+  .page-bottom-nav {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
