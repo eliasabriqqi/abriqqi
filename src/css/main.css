@@ -1071,7 +1071,8 @@ footer .socials {
     margin-top: 2.25rem;
   }
   .page-bottom-nav {
-    grid-column-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 9;
   }
   .page-bottom-nav .link-btn__text {
     display: block;
@@ -1270,7 +1271,7 @@ footer .socials {
     margin-top: 2.25rem;
   }
   .page-bottom-nav {
-    grid-column-end: 12;
+    grid-column-end: 11;
   }
   p.application-form__text,
   .application-form input[type=email],

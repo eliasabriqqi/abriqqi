@@ -39,6 +39,15 @@
   margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
 }
 
+.tutorial-contents__section li {
+  width: fit-content;
+}
+
+.tutorial-contents__section li:hover,
+.tutorial-contents__intro-link:hover {
+  opacity: 0.7;
+}
+
 /* Small Screen */
 
 @media only screen and (min-width: 600px) {
@@ -128,14 +137,14 @@
   }
 
   .tutorial-contents__section h3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
     margin-bottom: 0;
   }
 
   .tutorial-contents__section ul {
-    grid-column-start: 4;
-    grid-column-end: 10;
+    grid-column-start: 5;
+    grid-column-end: 11;
   }
 
   .tutorial-contents__section-block:last-of-type,
