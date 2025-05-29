@@ -1,0 +1,219 @@
+"use strict";
+
+const pageContent = document.querySelector(".page-content");
+
+const content = `<div class="grid-container tutorial-contents">
+<div
+  class="tutorial-contents__heading heading-h1 col-start-1 col-end-5 col-start-sm-3 col-end-sm-6"
+>
+  <h1>Модуль I<br /><span class="subheading">содержание</span></h1>
+</div>
+<a
+  href=""
+  class="tutorial-contents__intro-link col-start-1 col-end-5 col-start-sm-3 col-end-sm-6"
+  >Введение в испанский язык</a
+>
+</div>
+
+<section class="tutorial-contents__section grid-container">
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 1</h3>
+  <ul>
+    <li><a href="">1. Первые фразы</a></li>
+    <li><a href="">2. Существительные</a></li>
+    <li><a href="">3. Простые предложения</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 2</h3>
+  <ul>
+    <li><a href="">1. Существительные — искл.</a></li>
+    <li><a href="">2. Esto y Eso</a></li>
+    <li><a href="">3. Сокращённые предложения</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 3</h3>
+  <ul>
+    <li><a href="">1. Союзы y, sino, o, ni</a></li>
+    <li><a href="">2. Прилагательные – цвета</a></li>
+    <li><a href="">3. Другие прилагательные</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 4</h3>
+  <ul>
+    <li><a href="">1. Формы и материалы</a></li>
+    <li><a href="">2. Множественное число</a></li>
+    <li><a href="">3. Дни недели</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 5</h3>
+  <ul>
+    <li><a href="">1. Личные местоимения</a></li>
+    <li><a href="">2. Глагол Ser</a></li>
+    <li><a href="">3. Страны и национальности</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 6</h3>
+  <ul>
+    <li><a href="">1. Está y están</a></li>
+    <li><a href="">2. Предлоги и наречия места</a></li>
+    <li><a href="">3. Спряжение глагола Estar</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 7</h3>
+  <ul>
+    <li><a href="">1. Глагол hay</a></li>
+    <li><a href="">2. Числа от 1 до 20</a></li>
+    <li><a href="">3. Мой дом</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 8</h3>
+  <ul>
+    <li><a href="">1. Притяжательные местоимения</a></li>
+    <li><a href="">2. Ser y Estar</a></li>
+    <li><a href="">3. Который час?</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 9</h3>
+  <ul>
+    <li><a href="">1. Указательные местоимения</a></li>
+    <li><a href="">2. Инфинитив</a></li>
+    <li><a href="">3. Числа от 20 до 100</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 10</h3>
+  <ul>
+    <li><a href="">1. Presente -ar</a></li>
+    <li><a href="">2. Presente -er, -ir</a></li>
+    <li><a href="">3. Использование Presente</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 11</h3>
+  <ul>
+    <li><a href="">1. Месяцы и времена года</a></li>
+    <li><a href="">2. Presente - искл. I</a></li>
+    <li><a href="">3. Presente - искл. II</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 12</h3>
+  <ul>
+    <li><a href="">1. Предлоги a и de</a></li>
+    <li><a href="">2. Управление глаголов</a></li>
+    <li><a href="">3. Числительные от 100</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 13</h3>
+  <ul>
+    <li><a href="">1. Похожие по значению глаголы</a></li>
+    <li><a href="">2. Порядковые числительные</a></li>
+    <li><a href="">3. Даты</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 14</h3>
+  <ul>
+    <li><a href="">1. Возвратные глаголы</a></li>
+    <li><a href="">2. Как я провожу свой день</a></li>
+    <li><a href="">3. Использование возвратных гл.</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 15</h3>
+  <ul>
+    <li><a href="">1. Местоимение -se</a></li>
+    <li><a href="">2. algo, alguien, alguno</a></li>
+    <li><a href="">3. nada, nadie, ninguno</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 16</h3>
+  <ul>
+    <li><a href="">1. cómo, qué, cuál</a></li>
+    <li><a href="">2. quién, dónde, cuándo, cuánto</a></li>
+    <li><a href="">3. Двойное отрицание</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 17</h3>
+  <ul>
+    <li><a href="">1. Глагол gustar I</a></li>
+    <li><a href="">2. Глагол gustar II</a></li>
+    <li><a href="">3. Степени предпочтения</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 18</h3>
+  <ul>
+    <li><a href="">1. Глаголы, подобные gustar</a></li>
+    <li><a href="">2. Предложные местоимения</a></li>
+    <li><a href="">3. Погода</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 19</h3>
+  <ul>
+    <li><a href="">1. Особые существительные</a></li>
+    <li><a href="">2. Сравнительная степень</a></li>
+    <li><a href="">3. Превосходная степень</a></li>
+  </ul>
+</div>
+
+<div class="tutorial-contents__section-block">
+  <h3>Раздел 20</h3>
+  <ul>
+    <li><a href="">1. Presente Continuo</a></li>
+    <li><a href="">2. Presente Continuo II</a></li>
+    <li><a href="">3. Использование герундия</a></li>
+  </ul>
+</div>
+
+<hr
+  class="col-start-1 col-end-5 col-start-sm-2 col-end-sm-8 col-start-md-3 col-end-md-9 col-end-lg-11"
+/>
+</section>
+
+<div class="grid-container">
+<div class="page-bottom-nav">
+  <div class="link-btn link-btn--neutral page-bottom-nav__left-link">
+    <div class="link-btn__svg"></div>
+    <a href="" class="link-btn__text">Учебник испанского</a>
+  </div>
+
+  <div class="link-btn link-btn--neutral page-bottom-nav__right-link">
+    <a href="" class="link-btn__text">Модуль II</a>
+    <div class="link-btn__svg"></div>
+  </div>
+</div>
+</div>
+`;
+
+pageContent.insertAdjacentHTML("beforeend", content);

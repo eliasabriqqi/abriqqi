@@ -8,7 +8,7 @@
   "main": "index.html",
   "scripts": {
     "compile:sass": "sass src/sass/main.scss src/css/main.css -w",
-    "compile:content": "sass src/sass/pages/tutorial-contents/tutorial-contents.scss src/css/tutorial-contents.css -w"
+    "compile:content": "sass src/sass/pages/practice/practice.scss src/css/practice.css -w"
   },
   "devDependencies": {
     "sass": "^1.85.1"
