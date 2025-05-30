@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Futura Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Futura"),
+    url("https://fonts.cdnfonts.com/s/37773/FUTURA55REGULAR.woff")
+      format("woff");
+}
+
+.lessonlink {
+  color: #1891cd !important;
+}
+
+.lessonlink:hover {
+  color: #64a7c8 !important;
+}
+
+.lessonlink:visited {
+  color: #4faad7 !important;
+}
+
+.lessontitle {
+  margin-bottom: 3.125vw;
+  text-transform: none;
+}
+
+.teoriatitle {
+  margin-bottom: 3.125vw;
+  font-size: 2.604vw;
+  font-style: italic;
+  padding-left: 2.604vw;
+  border-left: 0.521vw solid #f2c47f;
+  text-transform: none;
+}
+
+.teoriafrase {
+  margin-bottom: 2.344vw;
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.667vw;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+.littletitle {
+  margin-top: 3.125vw;
+  margin-bottom: 1.563vw;
+  text-transform: none;
+  line-height: 1.1;
+}
+
+.practicatitle {
+  margin-top: 4.688vw;
+  margin-bottom: 3.125vw;
+}
+
+.palabrasnuevas {
+  line-height: 1.2;
+  margin-top: 4.688vw;
+  margin-bottom: 3.125vw;
+  text-transform: none;
+}
+
+.teoria,
+.practica {
+  padding-bottom: 1.563vw;
+  border-bottom: 0.052vw solid #c1c1c1;
+}
+
+.ejercicio {
+  margin-top: 2.344vw;
+  font-family: "Playfair Display", serif;
+  font-size: 2.083vw;
+  text-transform: none;
+}
+
+.kursiv {
+  font-style: italic;
+  color: #797979;
+}
+
+.teoria a {
+  color: #464646;
+}
+/* 
+.nota,
+.suelto,
+.numero,
+.letras {
+} */
+
+.ejemplosdefrases,
+.adivinafrase {
+  color: #278ba9;
+}
+
+.nomarginbottom {
+  margin-bottom: 0;
+}
+
+.centered-scheme-margin {
+  margin-top: 3.126vw;
+  margin-bottom: 1.563vw;
+}
+
+/* for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .teoriatitle {
+    font-size: 2.917vw;
+  }
+
+  .teoriafrase {
+    font-size: 2.083vw;
+  }
+
+  .ejercicio {
+    font-size: 2.344vw;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .lessontitle {
+    margin-bottom: 6.252vw;
+  }
+
+  .teoriatitle {
+    margin-left: -7.813vw;
+    margin-bottom: 6.252vw;
+    font-size: 8.333vw;
+    padding-left: 4.167vw;
+    border-left: 3.646vw solid #f2c47f;
+  }
+
+  .teoriafrase {
+    margin-bottom: 6.25vw;
+    font-size: 6.668vw;
+  }
+
+  .littletitle {
+    font-size: 7.292vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .ejercicio {
+    margin-top: 7.813vw;
+    font-size: 7.813vw;
+  }
+
+  .nomarginbottom {
+    margin-bottom: 0;
+  }
+
+  .centered-scheme-margin {
+    margin-top: 9.375vw;
+    margin-bottom: 9.375vw;
+  }
+
+  .first-column-mobile-margin-bottom {
+    margin-bottom: 3.125vw;
+  }
+
+  .castellano-audio {
+    margin-bottom: 13.021vw;
+    width: 100%;
+  }
+
+  .castellano-audio-tooltip {
+    margin-bottom: 7.813vw;
+    padding-left: 6.25vw;
+  }
+}
+
+/* Lesson Links */
+
+.lesson-links-row {
+  margin-top: 6.25vw;
+}
+
+.arrow-left-svg {
+  margin-right: 1.042vw;
+}
+
+.arrow-right-svg {
+  margin-left: 1.042vw;
+}
+
+.lesson-link {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+}
+
+/* Lesson Links for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .arrow-left-svg,
+  .arrow-right-svg,
+  .contenido-svg {
+    width: 3.438vw;
+    height: 3.438vw;
+  }
+
+  .lesson-link {
+    font-size: 1.302vw;
+  }
+}
+
+/* Lesson Links for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .lesson-links-row {
+    margin-top: 12.5vw;
+  }
+
+  .arrow-left-svg,
+  .arrow-right-svg,
+  .contenido-svg {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+}
+
+/* MATERIALES ELE PARA PROFESORES */
+
+.primeros-sustantivos img {
+  width: 10.417vw;
+  height: 10.417vw;
+}
+
+/* Lesson Links for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .primeros-sustantivos img {
+    width: 31.25vw;
+    height: 31.25vw;
+  }
+
+  .castellano-audio-image-table {
+    padding-left: 6.25vw;
+    margin-bottom: 7.813vw;
+  }
+}

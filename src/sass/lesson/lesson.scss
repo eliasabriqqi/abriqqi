@@ -1,0 +1,454 @@
+/* VARIABLES */
+
+@import "../variables/variables";
+
+.lesson-container {
+  margin-top: calc(
+    set-vertical-space-2($font-size-primary, $line-height-primary) + $nav-height
+  );
+}
+
+.teoria,
+.practica {
+  padding-bottom: set-vertical-space-2(
+    $font-size-primary,
+    $line-height-primary
+  );
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+  border-bottom: 1px solid $line-color-primary;
+}
+
+.lessontitle,
+.ejercicio,
+.littletitle,
+.practicatitle {
+  font-size: 3.2rem;
+}
+
+.lessontitle,
+.practicatitle,
+.ejercicio {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-transform: unset;
+}
+
+.teoriatitle {
+  font-size: 3.6rem;
+}
+
+.teoriatitle {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  margin-left: -3rem;
+  padding-left: 2rem;
+  line-height: 1.1;
+  text-transform: unset;
+  font-style: italic;
+  border-left: 1rem solid $standout-color-secondary;
+}
+
+.teoriafrase {
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  font-size: 2.4rem;
+}
+
+.littletitle {
+  margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+}
+
+.teoriafrase {
+  font-family: "Futura PT Light";
+}
+
+.practicatitle {
+  text-transform: uppercase;
+}
+
+.kursiv {
+  font-family: "Futura PT Light Oblique";
+  color: $font-color-light;
+}
+
+.lesson__page-bottom-nav {
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
+}
+
+.nomarginbottom {
+  margin-bottom: 0;
+}
+
+.ejemplosdefrases {
+  color: #278ba9;
+}
+
+.letras {
+  color: #dfaa5c;
+  font-weight: 700;
+}
+
+.suelto {
+  color: $standout-color-4;
+  font-weight: 600;
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px) {
+  @import "../variables/variables-sm";
+
+  .lesson-container {
+    margin-top: calc(
+      set-vertical-space-2($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+  }
+
+  .teoria,
+  .practica {
+    padding-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lessontitle,
+  .ejercicio,
+  .littletitle,
+  .practicatitle {
+    font-size: 2.8rem;
+  }
+
+  .lessontitle {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .teoriatitle {
+    font-size: 3.2rem;
+  }
+
+  .teoriatitle {
+    width: 35rem;
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    border-left: 0.8rem solid $standout-color-secondary;
+  }
+
+  .teoriafrase {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 2rem;
+  }
+
+  .littletitle {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lesson__page-bottom-nav {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 900px) {
+  @import "../variables/variables-md";
+
+  .lesson-container {
+    margin-top: calc(
+      set-vertical-space-3($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+  }
+
+  .teoria,
+  .practica {
+    padding-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lessontitle,
+  .ejercicio,
+  .littletitle,
+  .practicatitle {
+    font-size: 3rem;
+  }
+
+  .lessontitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .teoriatitle {
+    font-size: 3.4rem;
+  }
+
+  .teoriatitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    border-left: 0.7rem solid $standout-color-secondary;
+  }
+
+  .teoriafrase {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 1.8rem;
+  }
+
+  .littletitle {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lesson__page-bottom-nav {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 1200px) {
+  @import "../variables/variables-lg";
+
+  .lesson-container {
+    margin-top: calc(
+      set-vertical-space-3($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+  }
+
+  .teoria,
+  .practica {
+    padding-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lessontitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .teoriatitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    border-left: 0.8rem solid $standout-color-secondary;
+  }
+
+  .teoriafrase {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 1.8rem;
+  }
+
+  .littletitle {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lesson__page-bottom-nav {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1400px) {
+  @import "../variables/variables-xl";
+
+  .lesson-container {
+    margin-top: calc(
+      set-vertical-space-3($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+  }
+
+  .teoria,
+  .practica {
+    padding-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lessontitle,
+  .ejercicio,
+  .littletitle,
+  .practicatitle {
+    font-size: 3.3rem;
+  }
+
+  .lessontitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .teoriatitle {
+    font-size: 3.8rem;
+  }
+
+  .teoriatitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    border-left: 0.9rem solid $standout-color-secondary;
+  }
+
+  .teoriafrase {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 2rem;
+  }
+
+  .littletitle {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lesson__page-bottom-nav {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}
+
+/* Extra Extra Large Screen */
+
+@media only screen and (min-width: 1800px) {
+  @import "../variables/variables-xxl";
+
+  .lesson-container {
+    margin-top: calc(
+      set-vertical-space-3($font-size-primary, $line-height-primary) +
+        $nav-height
+    );
+  }
+
+  .teoria,
+  .practica {
+    padding-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lessontitle,
+  .ejercicio,
+  .littletitle,
+  .practicatitle {
+    font-size: 3.6rem;
+  }
+
+  .lessontitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .teoriatitle {
+    font-size: 4rem;
+  }
+
+  .teoriatitle {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    border-left: 1rem solid $standout-color-secondary;
+  }
+
+  .teoriafrase {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+    font-size: 2.2rem;
+  }
+
+  .littletitle {
+    margin-top: set-vertical-space-2($font-size-primary, $line-height-primary);
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .lesson__page-bottom-nav {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+}

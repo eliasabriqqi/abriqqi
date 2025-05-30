@@ -1,0 +1,3199 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/futura-condensed-pt?styles=16592,16593");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@font-face {
+  font-family: Rachella;
+  src: url("/wp-content/themes/castellano/fonts/RACHELLA.OTF");
+}
+
+/* Basic Styling */
+
+:root {
+  font-size: 62.5%;
+  line-height: 1.25;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  z-index: 100;
+  background-color: #fff;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 1.302vw;
+  line-height: 1.25;
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+/* Basic Styling For LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  blockquote {
+    font-size: 1.458vw;
+  }
+}
+
+/* Basic Styling for MD, SM and XS */
+
+@media (max-width: 991px) {
+  .row,
+  .justify-content-center,
+  .justify-content-lg-start,
+  .justify-content-xl-start,
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto {
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  blockquote {
+    font-size: 6.25vw;
+  }
+}
+
+/* 404 */
+
+.castellano-404-logo {
+  margin-top: 5vw;
+}
+
+.castellano-404-page {
+  margin-top: 7vw;
+}
+
+.castellano-404-number {
+  margin-bottom: 3.125vw;
+  font-size: 5vw;
+}
+
+.castellano-404-text {
+  margin-top: 1.563vw;
+  margin-bottom: 1.563vw;
+  font-size: 1.5vw;
+}
+
+.castellano-404-spanish-text {
+  margin-top: 1.563vw;
+  margin-bottom: 1.563vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.3vw;
+  font-style: italic;
+  text-transform: none;
+}
+
+.castellano-404-button {
+  color: #464646;
+  text-decoration: none;
+}
+
+.castellano-404-button:hover {
+  color: #898989;
+  text-decoration: none;
+}
+
+/* 404 for MD, SM and XS */
+
+@media (max-width: 991px) {
+  .castellano-404-page {
+    margin-top: 25vw;
+  }
+
+  .castellano-404-number {
+    margin-bottom: 10vw;
+    font-size: 20vw;
+  }
+
+  .castellano-404-text {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .castellano-404-spanish-text {
+    font-size: 6.25vw;
+  }
+
+  .castellano-404-page .cursos-button {
+    padding-left: 2.604vw;
+    padding-right: 2.604vw;
+  }
+}
+
+/* PRELOADER */
+
+#castellano-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+}
+
+#castellano-preloader-text {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  font-family: Rachella;
+  font-size: 3vw;
+}
+
+#myDiv {
+  display: none;
+}
+
+/* Preloader for MD, SM and XS */
+
+@media (max-width: 991px) {
+  #castellano-preloader-text {
+    font-size: 10vw;
+  }
+}
+
+/* SPACING */
+
+.mb-90 {
+  margin-bottom: 4.688vw;
+}
+
+.mb-120 {
+  margin-bottom: 6.25vw;
+}
+
+.mb-allscreens-120 {
+  margin-bottom: 6.25vw;
+}
+
+.mb-150 {
+  margin-bottom: 7.813vw;
+}
+
+.mb-allscreens-150 {
+  margin-bottom: 7.813vw;
+}
+
+.mb-180 {
+  margin-bottom: 9.375vw;
+}
+
+.mb-allscreens-180 {
+  margin-bottom: 9.375vw;
+}
+
+.mb-210 {
+  margin-bottom: 10.938vw;
+}
+
+.page-top-margin {
+  margin-top: 12.5vw;
+}
+
+.page-footer-margin {
+  margin-top: 9.375vw;
+}
+
+/* SPACING for MD, SM and XS */
+
+@media (max-width: 991px) {
+  .mb-60 {
+    margin-bottom: 6vw !important;
+  }
+
+  .mb-90 {
+    margin-bottom: 9.375vw;
+  }
+
+  .mb-120 {
+    margin-bottom: 12.5vw;
+  }
+
+  .mb-150 {
+    margin-bottom: 15.626vw;
+  }
+
+  .mb-180 {
+    margin-bottom: 15.626vw;
+  }
+
+  .page-top-margin {
+    margin-top: 25vw;
+  }
+
+  .page-footer-margin {
+    margin-top: 18vw;
+  }
+
+  .p-mobile-sides {
+    padding: 0 7.813vw 0 7.813vw;
+  }
+}
+
+#navbar-hide {
+  position: fixed;
+  top: 0;
+  transform: translateY(0vw);
+  transition: all 0.8s ease-in-out;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 0.6vw;
+}
+
+.navbar-hide-up {
+  transform: translateY(-7.813vw) !important;
+}
+
+.navbar-hide-down {
+  transform: translateY(0) !important;
+}
+
+.middlealign {
+  height: 6.25vw;
+}
+
+a.middlealign {
+  text-decoration: none;
+}
+
+.logo {
+  display: none !important;
+}
+
+.logoaboveall {
+  z-index: 99;
+}
+
+/* Header Logo For LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .middlealign {
+    height: 7.813vw;
+  }
+
+  .logo {
+    font-size: 2.083vw;
+  }
+
+  .logosvg svg {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+/* Header Logo For MD, SM and XS */
+
+@media (max-width: 991px) {
+  .middlealign {
+    height: 18.75vw;
+  }
+
+  .logo {
+    display: flex !important;
+    font-size: 6.668vw;
+    margin-left: 0px;
+    padding-bottom: 2vw;
+    font-family: "Playfair Display", serif;
+    color: #484848;
+  }
+
+  .logosvg svg {
+    display: none;
+  }
+
+  #navbar-hide {
+    padding-bottom: 0;
+  }
+
+  .navbar-hide-up {
+    transform: translateY(-18.75vw) !important;
+  }
+
+  .navbar-hide-down {
+    transform: translateY(0) !important;
+  }
+}
+
+/* Top Horizontal Menu */
+
+.header-block {
+  padding-left: 8.333333%;
+  padding-right: 8.333333%;
+  background-color: #ffff;
+}
+
+.menu-top-container li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 2.604vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+}
+
+.header-block a {
+  display: block;
+}
+
+/* Top Menu For LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menu-top-container li {
+    font-size: 1.302vw;
+  }
+}
+
+/* Top Menu For MD, SM and XS */
+
+@media (max-width: 991px) {
+  .header-block {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.menu-top-container li a {
+  text-decoration: none;
+  color: #393939;
+}
+
+.menu-top-container li a:hover {
+  color: #797979;
+}
+
+.horizontal-menu {
+  margin: 0;
+}
+
+/* Burger Menu */
+
+.burger {
+  cursor: pointer;
+  z-index: 99;
+}
+
+.burger div {
+  transition: all 0.4s ease-in-out;
+}
+
+.line1 {
+  height: 0.052vw;
+  background-color: #e8826a;
+  margin: 0.417vw;
+  /*margin: 0px 0px 5px 10px;*/
+  width: 2.083vw;
+}
+
+.line2 {
+  height: 0.052vw;
+  background-color: #e8826a;
+  margin: 0.417vw;
+  width: 2.083vw;
+}
+
+.line3 {
+  height: 0.052vw;
+  background-color: #e8826a;
+  margin: 0.417vw;
+  /*margin: 0px 0px 5px 10px;*/
+  width: 2.083vw;
+}
+
+.toggle .line1 {
+  transform: rotate(135deg) translate(0.313vw, -0.313vw);
+  transition: transform 0.4s ease-in-out;
+}
+
+.toggle .line2 {
+  opacity: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-0.313vw, -0.313vw);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Burger Menu For LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .line1 {
+    height: 0.052vw;
+    background-color: #e8826a;
+    margin: 0.521vw;
+    /*margin: 0px 0px 5px 10px;*/
+    width: 2.604vw;
+  }
+
+  .line2 {
+    height: 0.052vw;
+    background-color: #e8826a;
+    margin: 0.521vw;
+    width: 2.604vw;
+  }
+
+  .line3 {
+    height: 0.052vw;
+    background-color: #e8826a;
+    margin: 0.521vw;
+    /*margin: 0px 0px 5px 10px;*/
+    width: 2.604vw;
+  }
+
+  .toggle .line1 {
+    transform: rotate(135deg) translate(0.469vw, -0.469vw);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-0.313vw, -0.313vw);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+/* Burger for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .line1 {
+    height: 0.313vw;
+    background-color: #e8826a;
+    margin: 1.563vw;
+    /*margin: 0px 0px 5px 10px;*/
+    width: 8.333vw;
+  }
+
+  .line2 {
+    height: 0.313vw;
+    background-color: #e8826a;
+    margin: 1.563vw;
+    width: 8.333vw;
+  }
+
+  .line3 {
+    height: 0.313vw;
+    background-color: #e8826a;
+    margin: 1.563vw;
+    /*margin: 0px 0px 5px 10px;*/
+    width: 8.333vw;
+  }
+
+  .toggle .line1 {
+    transform: rotate(135deg) translate(1.4vw, -1.4vw);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-1.2vw, -1.2vw);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+/* Dropdown Menu */
+
+.dropdownmenu li a {
+  text-decoration: none;
+  color: #393939;
+}
+
+.dropdownmenu ul {
+  opacity: 0;
+  list-style-type: none;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  color: #393939;
+}
+
+.dropdownmenu {
+  position: fixed;
+  z-index: 98;
+  left: 0px;
+  height: 102vh;
+  top: 0vh;
+  width: 100%;
+  padding-top: 15.625vw;
+  background-color: #ffffff;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 4s;
+}
+
+.dropdownmenu h3 {
+  margin-bottom: 3.125vw;
+  font-family: "Playfair Display", serif;
+  font-size: 1.667vw;
+  color: #494949;
+}
+
+.dropdownmenu li {
+  margin-bottom: 1.563vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+}
+
+.burger-active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: transform 0.7s ease-in-out, opacity 0.8s;
+}
+
+/* Fade-In Dropdown Elements */
+
+.fadein1 {
+  opacity: 0;
+  transform: translateY(-10.417vw);
+  transition: transform 0.6s ease-in-out, opacity 0.5s;
+}
+
+.fadein2 {
+  opacity: 0;
+  transform: translateY(-10.417vw);
+  transition: transform 0.4s ease-in-out, opacity 0.5s;
+}
+
+.fadein3 {
+  opacity: 0;
+  transform: translateX(5.417vw);
+  transition: transform 0.6s ease-in-out, opacity 0.5s;
+}
+
+.icons-active {
+  opacity: 1;
+  transform: translateY(0vw);
+  transition: transform 1.2s ease-in-out, opacity 2.8s;
+}
+
+.dropdownmodules-active {
+  opacity: 1;
+  transform: translateY(0vw);
+  transition: transform 1.2s ease-in-out, opacity 1.5s;
+}
+
+/* Fade-In Dropdown Elements End */
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2.604vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.icontext {
+  display: block;
+  margin-bottom: 1.563vw;
+}
+
+.icontext a {
+  margin-bottom: 5.729vw;
+}
+
+.icontext svg {
+  display: block;
+  border: 0;
+  margin-right: 0.781vw;
+  float: left;
+}
+
+.dropdownmenu p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+}
+
+.dropdownmenu a {
+  color: #494949;
+  text-decoration: none;
+}
+
+.mobilevisible {
+  display: none !important;
+}
+
+.socialiconsrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 3.125vw;
+}
+
+.socialicons {
+  margin-right: 0.521vw;
+  margin-left: 0.521vw;
+}
+
+/* Dropdown Menu For LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .dropdownmenu h3 {
+    font-size: 2.083vw;
+  }
+
+  .dropdownmenu li {
+    font-size: 1.302vw;
+  }
+
+  .socialicons {
+    width: 3.542vw;
+    height: 3.542vw;
+  }
+}
+
+/* Dropdown Menu For MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .mobilehidden {
+    display: none !important;
+  }
+
+  .mobilevisible {
+    display: block !important;
+  }
+
+  .mobilevisible h3 {
+    display: block !important;
+  }
+
+  ul {
+    margin: 0px;
+    margin-left: 7.813vw;
+    padding: 0px;
+  }
+
+  .uchebnik-bracketarrow svg {
+    display: none;
+    margin-left: 7.292vw;
+  }
+
+  .dropdownmenu {
+    padding-top: 34.375vw;
+    height: 100%;
+  }
+
+  .dropdownmenu li {
+    margin: 0px;
+    margin-bottom: 5.208vw !important;
+    padding: 0px;
+    padding-bottom: 2.604vw;
+    font-family: "Playfair Display", serif;
+    font-size: 6.25vw !important;
+    text-transform: uppercase;
+  }
+
+  .dropdown-modullinks {
+    display: none;
+    position: absolute;
+    top: 70.313vw;
+    left: 57.083vw;
+  }
+
+  .dropdown-modullinks li {
+    margin: 0px;
+    margin-bottom: 3.646vw !important;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+    font-size: 5.208vw !important;
+    color: #606060;
+    text-transform: none;
+  }
+
+  .socialicons {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-right: 3.126vw;
+    margin-left: 3.126vw;
+  }
+
+  .socialiconsrow {
+    margin-bottom: 4.167vw;
+  }
+}
+
+.principal-hide-overflow {
+  overflow-x: hidden;
+}
+
+/* Animated Logo */
+
+.animatedlogo {
+  margin-top: 10.938vw;
+  margin-bottom: 7.813vw;
+}
+
+.animatedcircle {
+  margin-bottom: 0.521vw;
+  animation-name: logo-move-animation;
+  animation-duration: 1.8s;
+  animation-timing-function: cubic-bezier(0, 1, 0.3, 1);
+  animation-fill-mode: forwards;
+}
+
+.logoanimation-text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.146vw;
+  color: rgb(222, 179, 116);
+  opacity: 0;
+  animation-name: logo-text-animation;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#left-semicircle {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation-name: logo-circle-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#right-semicircle {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation-name: logo-circle-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#l-small {
+  stroke: #deb374;
+  fill: none;
+  stroke-dashoffset: 300;
+  stroke-dasharray: 300;
+  animation-name: logo-letters-animation;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+#l-large {
+  stroke: #deb374;
+  fill: none;
+  stroke-dashoffset: 300;
+  stroke-dasharray: 300;
+  animation-name: logo-letters-animation;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo-circle-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo-letters-animation {
+  0% {
+    fill: rgb(222, 179, 116, 0);
+  }
+
+  40% {
+    fill: rgb(222, 179, 116, 0);
+  }
+
+  60% {
+    fill: rgb(222, 179, 116, 1);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgb(222, 179, 116, 1);
+  }
+}
+
+@keyframes logo-text-animation {
+  from {
+    opacity: 0;
+    transform: translateY(2.5vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes logo-move-animation {
+  from {
+    transform: translateY(0.521vw);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/* Animated Logo for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .logoanimation-text {
+    font-size: 1.354vw;
+  }
+
+  .animatedcircle svg {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+/* Animated Logo for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .animatedlogo {
+    margin-top: 31.25vw;
+    margin-bottom: 15.625vw;
+  }
+
+  .logoanimation-text {
+    font-size: 6.25vw;
+  }
+
+  @keyframes logo-text-animation {
+    from {
+      opacity: 0;
+      transform: translateY(5.208vw);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .animatedcircle svg {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .animatedcircle {
+    margin-bottom: 0.781vw;
+  }
+}
+
+/* MAIN CONTENT PART */
+
+/* Home page */
+
+/* Basic Styling */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: #464646;
+}
+
+h1 {
+  font-size: 2.604vw;
+  line-height: 2.813vw;
+  text-transform: uppercase;
+}
+
+h1 em {
+  text-transform: none;
+}
+
+h2 {
+  font-size: 2.396vw;
+  text-transform: uppercase;
+}
+
+h2 em {
+  text-transform: none;
+}
+
+.main-title h2 {
+  position: relative;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.354vw;
+  font-weight: 300;
+  margin-top: 1.563vw;
+  padding-left: 1.563vw;
+  border-left: 0.26vw solid #f2c47f;
+}
+
+.main-title__discount {
+  position: absolute;
+  right: -2vw;
+  transform: rotate(10deg);
+  font-family: "Playfair Display";
+  font-weight: 500;
+  color: #e8826a;
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 2.083vw;
+  line-height: 2.083vw;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.396vw;
+  line-height: 1.1;
+  font-style: italic;
+  margin-bottom: 1.563vw;
+}
+
+h5 {
+  margin: 0;
+  font-family: "Futura PT", serif;
+  font-weight: 300;
+  color: #464646;
+  font-size: 1.667vw;
+  line-height: 1;
+  margin-bottom: 1.563vw;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1.563vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+  line-height: 1.25;
+}
+
+/* Basic Styling for LG */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 2.917vw;
+    line-height: 3.125vw;
+  }
+
+  h2 {
+    font-size: 2.708vw;
+    text-transform: uppercase;
+  }
+
+  .main-title h2 {
+    font-size: 1.563vw;
+  }
+
+  h3 {
+    font-size: 2.344vw;
+    line-height: 2.344vw;
+  }
+
+  h4 {
+    font-size: 2.604vw;
+    line-height: 2.604vw;
+  }
+
+  h5 {
+    font-size: 1.875vw;
+  }
+}
+
+/* Basic Styling for MD, SM and XS */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 8.333vw;
+    line-height: 9.375vw;
+  }
+
+  h2 {
+    font-size: 7.813vw;
+  }
+
+  .main-title {
+    padding-left: 4.167vw;
+    border-left: 3.646vw solid #f2c47f;
+  }
+
+  .main-title h2 {
+    margin-top: 6.252vw;
+    font-size: 6.25vw;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  h3 {
+    font-size: 6.771vw;
+    line-height: 6.771vw;
+  }
+
+  h4 {
+    font-size: 8.333vw;
+    line-height: 8.333vw;
+    margin-bottom: 5.208vw;
+  }
+
+  h5 {
+    font-size: 6.25vw;
+    margin-bottom: 6.25vw;
+  }
+}
+
+.foreword-right {
+  transform: translateY(20%);
+  opacity: 0;
+  animation: 1s ease-in-out 0.4s 1 forewordSlideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
+.foreword-left {
+  transform: translateY(30%);
+  opacity: 0;
+  animation: 1s ease-in-out 0.5s 1 forewordSlideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
+@keyframes forewordSlideInFromBottom {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.foreword-name {
+  margin-top: 4.688vw;
+  margin-bottom: 1.563vw;
+  margin-right: 0.781vw;
+}
+
+.foreword-name h3 {
+  font-size: 1.667vw;
+  margin-bottom: 0.26vw;
+}
+
+.foreword-name h4 {
+  font-size: 1.146vw;
+  font-style: italic;
+}
+
+.ilya {
+  width: 27.865vw;
+  height: 41.797vw;
+  margin-bottom: 2.604vw;
+}
+
+.foreword {
+  width: 27.865vw;
+}
+
+video[poster] {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.frontpage-video-block {
+  display: block;
+  position: relative;
+  margin-bottom: 7.813vw;
+}
+
+.castellano-video {
+  cursor: pointer;
+}
+
+.castellano-video:hover ~ .castellano-video-cursor {
+  background-image: url("/wp-content/themes/castellano/img/icons/castellano-play-button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5.208vw;
+  height: 5.208vw;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  animation: cursorAnim 0.9s infinite alternate;
+}
+
+.expand {
+  background-image: url("/wp-content/themes/castellano/img/icons/castellano-pause-button.svg");
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.7);
+    opacity: 0.8;
+  }
+}
+
+.hide-padding-right {
+  padding-right: 0px !important;
+}
+
+.heading-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 6.25vw;
+  opacity: 0;
+  transform: translateX(-5.208vw);
+  transition: transform 3s 0.2s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.9s 0.2s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Headline On Scroll Transition */
+.heading-block.is-visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.heading-block h1 {
+  color: #ffff;
+  margin-bottom: 1.563vw;
+}
+
+.frontpage-tagline {
+  border-left: 0.26vw solid #f2c47f;
+}
+
+.frontpage-tagline h2 {
+  padding-left: 1.563vw;
+  padding-right: 4.167vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.354vw;
+  color: #ffff;
+  text-transform: none;
+}
+
+.manual-row {
+  margin-bottom: 7.813vw;
+}
+
+.sofia-estudiando-pic {
+  width: 40.2vw;
+  height: auto;
+}
+
+.frontpage-manual-text h4 {
+  margin-bottom: 0.521vw;
+  font-family: "Futura PT", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.146vw;
+}
+
+.frontpage-manual-text h3 {
+  text-transform: none;
+  line-height: 2.604vw;
+  margin-bottom: 1.563vw;
+  font-size: 2.604vw;
+}
+
+.link-row svg {
+  margin-right: 0.781vw;
+}
+
+.link-row a {
+  text-decoration: none;
+}
+
+.round-arrow-button-text {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #deb374;
+  text-transform: uppercase;
+}
+
+#link-svg {
+  transform: translateX(0vw);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#link-svg.link-move {
+  transform: translateX(-0.521vw);
+  transition: transform 0.5s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#link-svg-right {
+  transform: translateX(0vw);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#link-svg-right.link-move-right {
+  transform: translateX(0.521vw);
+  transition: transform 0.5s cubic-bezier(0, 1, 0.3, 1);
+}
+
+/* MAIN CONTENT for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p {
+    font-size: 1.302vw;
+    line-height: 1.823vw;
+    margin-bottom: 1.302vw;
+  }
+
+  .foreword-name h3 {
+    font-size: 1.875vw;
+  }
+
+  .foreword-name h4 {
+    font-size: 1.354vw;
+  }
+
+  .frontpage-tagline h2 {
+    font-size: 1.563vw;
+    padding-left: 1.823vw;
+    padding-right: 0px;
+  }
+
+  .frontpage-manual-text h4 {
+    font-size: 1.354vw;
+  }
+
+  .frontpage-manual-text h3 {
+    text-transform: none;
+    font-size: 3.021vw;
+  }
+
+  .link-block svg {
+    width: 3.438vw;
+    height: 3.438vw;
+  }
+
+  .round-arrow-button-text {
+    font-size: 1.302vw;
+  }
+}
+
+/* MAIN CONTENT for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 6.25vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .ilya {
+    width: 80vw;
+    height: 120vw;
+  }
+
+  .foreword {
+    width: 100vw;
+  }
+
+  .foreword-name {
+    margin-top: 6.25vw;
+    margin-bottom: 5.208vw;
+    margin-right: 0px;
+  }
+
+  .foreword-name h3 {
+    margin-bottom: 0;
+    font-size: 6.771vw;
+  }
+
+  .foreword-name h4 {
+    font-size: 5.729vw;
+    margin-bottom: 0;
+  }
+
+  .heading-block {
+    position: static;
+    margin-bottom: 9.375vw;
+    border-left: 3.646vw solid #f2c47f;
+    padding-left: 4.167vw;
+  }
+
+  .heading-block h1 {
+    color: #464646;
+    margin-bottom: 6.252vw;
+  }
+
+  .frontpage-tagline {
+    border-left: 0;
+  }
+
+  .frontpage-tagline h2 {
+    font-size: 6.25vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #464646;
+  }
+
+  video[poster] {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .frontpage-video-mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  .frontpage-video-block {
+    display: none;
+  }
+
+  .frontpage-video-block-mobile {
+    margin-bottom: 0px;
+  }
+
+  .manual-row {
+    margin-bottom: 9.375vw;
+  }
+
+  .frontpage-manualpic {
+    position: relative;
+    display: block;
+    background-color: #7b909c;
+    height: 109.333vw;
+  }
+
+  .frontpage-manual-text {
+    position: absolute;
+    left: 0;
+    padding: 7.813vw;
+  }
+
+  .frontpage-manual-text h3,
+  .frontpage-manual-text h4,
+  .frontpage-manual-text p {
+    color: #ffff;
+  }
+
+  .link-block p {
+    color: #ffd8a1;
+  }
+
+  .frontpage-manual-text h4 {
+    margin-bottom: 2.604vw;
+    font-size: 6.25vw;
+    color: #ebebeb;
+  }
+
+  .frontpage-manual-text h3 {
+    text-transform: none;
+    margin-top: 6.771vw;
+    margin-bottom: 7.292vw;
+    font-size: 8.333vw;
+  }
+
+  .link-row svg {
+    margin-right: 3.781vw;
+  }
+
+  .link-block svg #circle,
+  .link-block svg #linea-1,
+  .link-block svg #linea-2,
+  .link-block svg #linea-3 {
+    stroke: #ffd8a1;
+  }
+
+  .round-arrow-button-text {
+    font-size: 6.25vw;
+    color: #ffd8a1;
+  }
+}
+
+/* Read More Button */
+
+#read-more {
+  display: none;
+}
+
+#read-more-svg-down {
+  transform: translateY(0vw);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#read-more-svg-up {
+  display: none;
+  transform: translateY(0vw);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#read-more-svg-down.readmore-move {
+  transform: translateY(0.26vw);
+  transition: transform 0.5s cubic-bezier(0, 1, 0.3, 1);
+}
+
+#read-more-svg-up.readmore-move {
+  transform: translateY(-0.26vw);
+  transition: transform 0.5s cubic-bezier(0, 1, 0.3, 1);
+}
+
+.readmore-block svg {
+  margin-right: 0.781vw;
+}
+
+.readmore-block {
+  cursor: pointer;
+}
+
+#read-more-text {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+/* Read More Button for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .readmore-block svg {
+    width: 3.125vw;
+    height: 3.125vw;
+    margin-right: 1.042vw;
+  }
+
+  #read-more-text {
+    font-size: 1.302vw;
+  }
+}
+
+/* Read More Button for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .readmore-row {
+    padding-right: 7.813vw;
+  }
+
+  .readmore-block svg {
+    width: 10.417vw;
+    height: 10.417vw;
+    margin-right: 2.343vw;
+  }
+
+  #read-more-text {
+    font-size: 6.25vw;
+  }
+}
+
+/* Front Page Cursos */
+
+.cursos-row h3 {
+  display: block;
+  padding-left: 1.563vw;
+  margin-bottom: 1.563vw;
+  border-left: 0.26vw solid #f2c47f;
+}
+
+.cursos-pics {
+  position: relative;
+}
+
+.cursos-interior1 {
+  width: 26.865vw;
+}
+
+.cursos-interior2 {
+  position: absolute;
+  width: 19.833vw;
+  margin-left: 1.563vw;
+  bottom: -3.125vw;
+}
+
+.cursos-text-block {
+  position: relative;
+}
+
+.cursos-text-block h2 {
+  position: absolute;
+  top: 3.125vw;
+  left: -10.417vw;
+  text-align: right;
+}
+
+.cursos-line {
+  position: absolute;
+  left: -22.417vw;
+  top: 5.5vw;
+  width: 20.833vw;
+  border-bottom: 1px solid #464646;
+}
+
+.cursos-text {
+  margin-bottom: 4.688vw;
+}
+
+.cursos-button-row a,
+.cursos-button-row a:hover {
+  text-decoration: none;
+  color: #494949;
+}
+
+.cursos-button {
+  width: 19vw;
+  height: 4vw;
+  background-color: #f2c47f;
+  text-transform: uppercase;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  margin-top: 1.563vw;
+  transition: 0.3s;
+}
+
+.cursos-button:hover {
+  background-color: #ffd69a;
+}
+
+.cursos-button svg {
+  margin-left: 1.042vw;
+}
+
+/* Front Page Cursos for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cursos-button {
+    width: 18.75vw;
+    height: 3.646vw;
+    font-size: 1.302vw;
+    padding-left: 1.146vw;
+    margin-top: 0.781vw;
+    transition: 0.3s;
+  }
+}
+
+/* Front Page Cursos for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .cursos-row h3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-bottom: 9.375vw;
+    border-left: 0px;
+  }
+
+  .cursos-block {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .cursos-pics {
+    position: static;
+  }
+
+  .cursos-interior1 {
+    width: 49vw;
+    height: 75vw;
+  }
+
+  .cursos-interior2 {
+    position: static;
+    width: 49vw;
+    height: 75vw;
+    margin-left: 1.5vw;
+  }
+
+  .cursos-text-block {
+    position: static;
+  }
+
+  .cursos-text {
+    margin-bottom: 0px;
+  }
+
+  .cursos-text-block h2 {
+    position: static;
+    text-align: left;
+    margin-bottom: 6.25vw;
+  }
+
+  .cursos-line {
+    display: none;
+    position: static;
+    width: 0px;
+    border-bottom: 0px;
+  }
+
+  .cursos-button {
+    width: auto;
+    height: auto;
+    margin-top: 6.25vw;
+    font-size: 5vw;
+    padding: 2.604vw 0 2.604vw 0;
+  }
+
+  .cursos-button svg {
+    display: none;
+  }
+}
+
+/* Front Page EspaÃ±ol a Distancia */
+
+.distancia-row {
+  margin-bottom: 10.938vw;
+}
+
+.distancia-text-block {
+  position: relative;
+  padding-top: 9.896vw;
+}
+
+.distancia-text {
+  margin-top: 1.563vw;
+  margin-bottom: 1.563vw;
+  padding-right: 1.563vw;
+}
+
+.distancia-text-block h2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.distancia-line {
+  position: absolute;
+  left: 19vw;
+  top: 4.531vw;
+  width: 12vw;
+  border-bottom: 1px solid #464646;
+}
+
+.masha-ensenando-pic {
+  width: 41.667vw;
+  height: auto;
+}
+
+/* Front Page EspaÃ±ol a Distancia for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .distancia-text {
+    padding-right: 0px;
+  }
+}
+
+/* Front Page EspaÃ±ol a Distancia for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .distancia-row {
+    margin-bottom: 15.625vw;
+  }
+
+  .masha-ensenando-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .distancia-text-block {
+    position: static;
+    padding-top: 0;
+  }
+
+  .distancia-text-block h2 {
+    position: static;
+    text-align: left;
+    margin-bottom: 5.208vw;
+    padding-left: 0px;
+  }
+
+  .distancia-line {
+    display: none;
+    position: static;
+    width: 0px;
+    border-bottom: 0px;
+  }
+
+  .distancia-pic {
+    margin-bottom: 9.375vw;
+  }
+}
+
+/* Front Page Feedback */
+
+.feedback-wanna-learn {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.667vw;
+  color: #494949;
+  line-height: 1.1;
+}
+
+input[name="your-email"] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #464646;
+  width: 100%;
+}
+
+input[name="your-email"]::placeholder {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #797979;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+#wpcf7-f246-p11-o1 {
+  margin-top: 2.604vw;
+}
+
+#wpcf7-f246-p11-o1 label {
+  display: block;
+  width: 100%;
+}
+
+#wpcf7-f246-p11-o1 textarea {
+  padding: 0.26vw;
+  resize: none;
+  width: 100%;
+  height: 10.938vw;
+}
+
+#wpcf7-f246-p11-o1 textarea::placeholder {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #797979;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.feedback-text {
+  margin-top: 5.729vw;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+  display: block;
+  margin-left: auto;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #deb374;
+  background-color: transparent;
+  border: none;
+}
+
+input.wpcf7-form-control.wpcf7-submit:focus {
+  color: #ffcb7d;
+  outline: none;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+  color: #ffcb7d;
+  border: 0;
+}
+
+input.wpcf7-form-control.wpcf7-submit:active {
+  color: #f2c47f;
+  border: 0;
+}
+
+#wpcf7-f246-p11-o1 .button {
+  border: 1px solid red;
+}
+
+.wpcf7-form-control:focus {
+  border-color: #ddd !important;
+}
+
+input[name="your-email"]:focus {
+  border-color: #ddd !important;
+}
+
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
+  outline: none;
+}
+
+span.wpcf7-not-valid-tip {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.042vw;
+  color: #ff8456;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border: 1px solid #ff8456;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.042vw;
+  line-height: 1.2;
+  color: #464646;
+}
+
+/* Front Page Feedback for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .feedback-wanna-learn {
+    font-size: 1.875vw;
+  }
+
+  .feedback-text {
+    margin-top: 4.688vw;
+  }
+
+  input[name="your-email"]::placeholder {
+    font-size: 1.302vw;
+  }
+
+  #wpcf7-f246-p11-o1 textarea::placeholder {
+    font-size: 1.302vw;
+  }
+
+  input.wpcf7-form-control.wpcf7-submit {
+    font-size: 1.302vw;
+  }
+
+  span.wpcf7-not-valid-tip {
+    font-size: 1.146vw;
+  }
+
+  div.wpcf7-validation-errors,
+  div.wpcf7-acceptance-missing {
+    border: 1px solid #ff8456;
+  }
+
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    font-size: 1.146vw;
+  }
+}
+
+/* Front Page Feedback for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  #wpcf7-f246-p11-o1 textarea {
+    padding: 1.302vw;
+    height: 30.938vw;
+  }
+
+  .feedback-wanna-learn {
+    font-size: 7.5vw;
+  }
+
+  input[name="your-email"]::placeholder {
+    font-size: 6.25vw;
+  }
+
+  #wpcf7-f246-p11-o1 textarea::placeholder {
+    font-size: 6.25vw;
+  }
+
+  input.wpcf7-form-control.wpcf7-submit {
+    font-size: 7.188vw;
+  }
+
+  span.wpcf7-not-valid-tip {
+    font-size: 6.25vw;
+  }
+
+  div.wpcf7-validation-errors,
+  div.wpcf7-acceptance-missing {
+    font-size: 7.188vw;
+  }
+
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    font-size: 6.25vw;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.footermenu {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding-top: 15.625vw;
+  padding-bottom: 26.042vw;
+  background-color: #2d2a29;
+}
+
+.footermenu h3 {
+  margin-bottom: 3.125vw;
+  font-family: "Playfair Display", serif;
+  font-size: 1.667vw;
+  color: #efefef;
+}
+
+.footermenu ul {
+  list-style-type: none;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+}
+
+.footermenu li {
+  margin-bottom: 1.563vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #aeaeae;
+}
+
+.footermenu li a {
+  text-decoration: none;
+  color: #aeaeae;
+}
+
+.footermenu p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #aeaeae;
+}
+
+.footermenu a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+.footer-socialiconsrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 3.125vw;
+}
+
+.socialicons:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s ease-out;
+}
+
+/* FOOTER for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .logosvg-footer {
+    margin-bottom: 3.125vw;
+  }
+
+  .footermenu {
+    padding-top: 7.813vw;
+  }
+
+  .footermenu li {
+    margin-bottom: 0;
+    font-family: "Futura PT", serif;
+    font-size: 6.25vw;
+    color: #aeaeae;
+  }
+
+  .footermenu h3 {
+    margin-top: 7.813vw;
+    margin-bottom: 5.208vw;
+    font-family: "Playfair Display", serif;
+    font-size: 6.25vw;
+    color: #efefef;
+  }
+
+  .mobile-footer-contacts {
+    margin-top: 7.813vw;
+    margin-bottom: 7.813vw;
+    margin-left: 7.813vw;
+    border-top: 1px solid #c1c1c1;
+  }
+
+  .mobile-footer-contacts h3 {
+    font-size: 5.208vw;
+    margin-bottom: 2.604vw;
+    color: #efefef;
+    text-transform: uppercase;
+  }
+
+  .mobile-footer-contacts h4 {
+    font-size: 4.688vw;
+    margin-bottom: 0;
+    color: #aeaeae;
+  }
+
+  .footer-socialiconsrow {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 5.208vw;
+  }
+}
+
+/* MANUAL page */
+
+.manual-quote {
+  border-left: 1px solid #9c9c9c;
+  padding-left: 1.563vw;
+  margin-bottom: 6.25vw;
+  opacity: 0;
+  transform: translateX(-5.208vw);
+  transition: transform 2.5s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.5s 0.1s ease-out;
+  will-change: transform, opacity;
+}
+
+.manual-pic {
+  width: 40.104vw;
+  height: auto;
+}
+
+.manual-pic-text p {
+  margin-top: 1.563vw;
+}
+
+.manual-quote.is-visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.manual-pic-text svg {
+  margin-right: 0.781vw;
+}
+
+.manual-pic-text a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.round-arrow-button-text-gray {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #464646;
+  text-transform: uppercase;
+}
+
+.manual-modul-link h2 {
+  font-size: 2.604vw;
+  color: #deb374;
+  text-align: center;
+}
+
+.manual-modul-link em {
+  font-size: 1.667vw;
+  color: #deb374;
+}
+
+.column-line {
+  border-bottom: 1px solid #464646;
+}
+
+.manual-about-title {
+  margin-bottom: 3.125vw;
+}
+
+/* MANUAL page for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .manual-quote {
+    padding-left: 1.823vw;
+  }
+
+  .round-arrow-button-text-gray {
+    font-size: 1.302vw;
+  }
+
+  .manual-modul-link h2 {
+    font-size: 2.813vw;
+  }
+
+  .manual-modul-link em {
+    font-size: 1.875vw;
+  }
+}
+
+/* MANUAL page for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .manual-quote {
+    border-left: 0;
+    padding-left: 5.208vw;
+  }
+
+  .manual-pic {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9.375vw;
+  }
+
+  .manual-pic-text {
+    padding: 0 5.208vw 0 5.208vw;
+  }
+
+  .manual-pic-text h1 {
+    margin-bottom: 5.208vw;
+  }
+
+  .round-arrow-button-text-gray {
+    font-size: 6.25vw;
+  }
+
+  .manual-modul-link h2 {
+    font-size: 8.333vw;
+    line-height: 1;
+  }
+
+  .manual-modul-link em {
+    font-size: 4.167vw;
+  }
+
+  .gray-circle-button svg {
+    margin-right: 3.781vw;
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+
+  .gray-circle-button .link-block svg #circle,
+  .gray-circle-button .link-block svg #linea-1,
+  .gray-circle-button .link-block svg #linea-2,
+  .gray-circle-button .link-block svg #linea-3 {
+    stroke: #464646;
+  }
+
+  .manual-modul-link:first-of-type {
+    border-right: 1px solid #464646;
+  }
+
+  .manual-about-title {
+    margin-bottom: 6.25vw;
+  }
+}
+
+/* FOREWORD page */
+
+.foreword-intro-text-left .link-row {
+  margin-top: 2.083vw;
+}
+
+.lorem-pic {
+  width: 35.052vw;
+  height: auto;
+}
+
+.about_me .teoriatitle {
+  margin-bottom: 6.25vw;
+}
+
+.about_me h3 {
+  margin-top: 3.125vw;
+  margin-bottom: 3.125vw;
+}
+
+.about_me h3 em {
+  text-transform: none;
+}
+
+.about_me .manual-pic {
+  width: 31.604vw;
+}
+
+/* FOREWORD page for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .lorem-pic {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9.375vw;
+  }
+
+  .about_me .teoriatitle {
+    margin-bottom: 12.5vw;
+    margin-left: 0;
+  }
+
+  .about_me h3 {
+    margin-top: 6.25vw;
+    margin-bottom: 6.25vw;
+  }
+
+  .about_me .manual-pic {
+    width: 100%;
+  }
+}
+
+/* CAROUSEL */
+
+.cursos-carousel-row {
+  margin-bottom: 9.375vw;
+}
+
+.cursos-carousel-pic {
+  width: 100%;
+}
+
+.castellano-carousel-text h4 {
+  margin-bottom: 0.521vw;
+  font-family: "Futura PT", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.146vw;
+}
+
+.castellano-carousel-text h3 {
+  text-transform: none;
+  line-height: 2.604vw;
+  margin-bottom: 1.563vw;
+  font-size: 2.604vw;
+}
+
+.castellano-carousel-border {
+  border-left: 1px solid #707070;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  bottom: 0;
+  left: 33.333vw;
+  background-image: none;
+  width: 2.813vw;
+  height: auto;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  bottom: 0;
+  left: -46.875vw;
+  background-image: none;
+  width: 2.813vw;
+  height: auto;
+}
+
+/* CAROUSEL for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .castellano-carousel-text h4 {
+    font-size: 1.354vw;
+  }
+
+  .castellano-carousel-text h3 {
+    text-transform: none;
+    font-size: 3.021vw;
+  }
+
+  .carousel-control-prev-icon {
+    width: 3.125vw;
+  }
+
+  .carousel-control-next-icon {
+    width: 3.125vw;
+  }
+}
+
+/* CAROUSEL for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .castellano-carousel-text h4 {
+    font-size: 6.25vw;
+    color: #c1c1c1;
+  }
+
+  .castellano-carousel-text h3 {
+    text-transform: none;
+    margin-top: 3.646vw;
+    margin-bottom: 5.208vw;
+    font-size: 7.292vw;
+    line-height: 1.2;
+    color: #ececec;
+  }
+
+  .castellano-carousel-text p {
+    color: #ececec;
+  }
+
+  .cursos-carousel-row {
+    margin-bottom: 0px;
+    padding-bottom: 26.042vw;
+    background-color: black;
+  }
+
+  .castellano-carousel-text {
+    background-color: black;
+    margin: 10.417vw 3.125vw 10.417vw 3.125vw;
+  }
+
+  .carousel-control-prev-icon {
+    position: absolute;
+    bottom: -18.229vw;
+    left: 60vw;
+    background-image: none;
+    width: 12.5vw;
+    height: auto;
+  }
+
+  .carousel-control-next-icon {
+    position: absolute;
+    bottom: -18.229vw;
+    left: -6vw;
+    background-image: none;
+    width: 12.5vw;
+    height: auto;
+  }
+
+  #carousel-ellipse,
+  #carousel-line1,
+  #carousel-line2 {
+    stroke: #c1c1c1;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    opacity: 1;
+  }
+}
+
+/* COLLAPSE ACCORDION */
+
+.cursos-collapse-pic {
+  width: 100%;
+  height: auto;
+}
+
+.cursos-collapse-row {
+  position: relative;
+  margin-right: 0px;
+  margin-bottom: 9.375vw;
+}
+
+.cursos-collapse-text {
+  position: absolute;
+  height: 90%;
+  padding-left: 6.25vw;
+  padding-right: 6.25vw;
+  padding-top: 4.688vw;
+  background-color: #fff;
+  box-shadow: 0.521vw 0.521vw 2.083vw rgba(0, 0, 0, 0.2);
+}
+
+#castellanoAccordion p {
+  margin: 0;
+  margin-bottom: 1.563vw;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.146vw;
+  color: #494949;
+  line-height: 1.25;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.card-header {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 0;
+  padding: 1.042vw 0 0 0;
+}
+
+.btn-link {
+  padding-left: 0;
+  color: #464646;
+  font-size: 1.667vw;
+}
+
+.btn-link:hover {
+  color: #797979;
+}
+
+#castellanoAccordion .btn:focus {
+  box-shadow: none;
+}
+
+#castellanoAccordion button,
+#castellanoAccordion button:hover,
+#castellanoAccordion button:active {
+  text-decoration: none;
+}
+
+#castellanoAccordion .card-body {
+  padding: 0;
+  padding-top: 0.781vw;
+  padding-bottom: 0.26vw;
+  border-bottom: 0.052vw solid #dedede;
+}
+
+/* COLLAPSE ACCORDION for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cursos-collapse-text {
+    padding-left: 4.688vw;
+    padding-right: 4.688vw;
+    padding-top: 3.125vw;
+  }
+
+  #castellanoAccordion .card-body {
+    padding-bottom: 0.156vw;
+    border-bottom: 0.052vw solid #dedede;
+  }
+
+  #castellanoAccordion p {
+    margin-bottom: 0.781vw;
+    font-family: "Futura PT", sans-serif;
+    font-weight: 300;
+    font-size: 1.302vw;
+    color: #494949;
+    line-height: 1.823vw;
+  }
+
+  #castellanoAccordion .btn-link {
+    font-size: 1.875vw;
+  }
+}
+
+/* COLLAPSE ACCORDION for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .cursos-collapse-pic {
+    height: 187.5vw;
+    width: 100%;
+    margin-top: -1px;
+  }
+
+  .cursos-collapse-text {
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5.208vw;
+    box-shadow: none;
+  }
+
+  .btn-link {
+    font-size: 6.668vw;
+  }
+
+  #castellanoAccordion p {
+    margin-bottom: 7.813vw;
+    font-size: 6.25vw;
+    line-height: 1.25;
+  }
+
+  .card-header {
+    padding: 5.208vw 0 0 0;
+  }
+
+  #castellanoAccordion .card-body {
+    padding-top: 5.208vw;
+    border-bottom: 0.052vw solid #797979;
+  }
+}
+
+/* TESTIMONIALS CAROUSEL */
+
+.testimonials-carousel {
+  margin-bottom: 9.375vw;
+}
+
+.testimonials-carousel-pic {
+  width: 100%;
+}
+
+.testimonials-carousel h3 {
+  text-transform: uppercase;
+  font-size: 1.979vw;
+  margin-bottom: 0.781vw;
+}
+
+.testimonials-carousel h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.667vw;
+  margin-bottom: 0.781vw;
+}
+
+.testimonials-carousel p {
+  display: inline-block;
+  margin-top: 1.563vw;
+  padding-top: 0.521vw;
+  border-top: 0.052vw solid #c1c1c1;
+  font-style: italic;
+  color: #797979;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -0.781vw;
+  left: 23.958vw;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 1.042vw;
+  height: 1.042vw;
+  margin-right: 0.365vw;
+  margin-left: 0.365vw;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+  border-top: none;
+  border-bottom: none;
+}
+
+.carousel-indicators li.active {
+  opacity: 1;
+  background-color: #797979;
+}
+
+/* TESTIMONIALS CAROUSEL for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .testimonials-carousel h3 {
+    font-size: 2.188vw;
+  }
+
+  .testimonials-carousel h4 {
+    font-size: 1.771vw;
+  }
+}
+
+/* TESTIMONIALS CAROUSEL for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .testimonials-carousel {
+    margin-bottom: 25vw;
+  }
+
+  .carousel-indicators {
+    position: relative;
+    top: -12.5vw;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .carousel-indicators li {
+    display: inline-block;
+    width: 6.25vw;
+    height: 6.25vw;
+    margin-right: 2.188vw;
+    margin-left: 2.188vw;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .testimonials-carousel h3 {
+    font-size: 6.25vw;
+    margin-top: 6.771vw;
+    margin-bottom: 3.125vw;
+  }
+
+  .testimonials-carousel h4 {
+    font-size: 6.25vw;
+    margin-bottom: 3.125vw;
+  }
+
+  .testimonials-carousel p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2.604vw;
+  }
+}
+
+/* CURSOS LANDING page */
+
+.cursos-title-row {
+  margin-bottom: 7.813vw;
+}
+
+.cursos-hero,
+.cursos-hero-mobile {
+  width: 100%;
+  height: auto;
+}
+
+.cursos-hero-row {
+  margin-bottom: 9.375vw;
+}
+
+.cursos-call-button {
+  padding-bottom: 5.208vw;
+  padding-top: 5.208vw;
+  margin-bottom: 9.375vw;
+  background-color: #f2c47f;
+}
+
+.cursos-call-button h4 {
+  margin-bottom: 0;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  color: #494949;
+  font-style: normal;
+}
+
+.cursos-call-button svg {
+  margin-right: 2.604vw;
+}
+
+/* CURSOS LANDING page for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .cursos-title-row {
+    margin-bottom: 9.375vw;
+  }
+
+  .cursos-hero-row {
+    margin-bottom: 0;
+  }
+}
+
+/* LANDSCAPE ORIENTATION for MD, SM and XS */
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  #navbar-hide {
+    padding-bottom: 0;
+  }
+
+  .navbar-hide-up {
+    transform: translateY(-9.375vw) !important;
+  }
+
+  .navbar-hide-down {
+    transform: translateY(0) !important;
+  }
+
+  .dropdownmenu {
+    padding-top: 15.625vw;
+  }
+
+  .dropdownmenu li {
+    margin-bottom: 1.563vw !important;
+    padding-bottom: 1.563vw;
+    font-size: 4.167vw !important;
+    border-bottom: none;
+  }
+
+  .dropdown-modullinks,
+  .uchebnik-bracketarrow svg {
+    display: none;
+  }
+
+  .socialicons {
+    width: 7.813vw;
+    height: 7.813vw;
+    margin-right: 1.563vw;
+    margin-left: 1.563vw;
+  }
+
+  .socialiconsrow {
+    margin-bottom: 1.563vw;
+  }
+
+  .logo {
+    font-size: 4.167vw;
+  }
+
+  .middlealign {
+    height: 9.375vw;
+  }
+
+  .animatedlogo {
+    margin-top: 20.833vw;
+    margin-bottom: 12vw;
+  }
+
+  .animatedcircle svg {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .logoanimation-text {
+    font-size: 4.688vw;
+  }
+
+  .line1 {
+    height: 0.208vw;
+    margin: 1.302vw;
+    width: 6.771vw;
+  }
+
+  .line2 {
+    height: 0.208vw;
+    margin: 1.302vw;
+    width: 6.771vw;
+  }
+
+  .line3 {
+    height: 0.208vw;
+    margin: 1.302vw;
+    width: 6.771vw;
+  }
+
+  .toggle .line1 {
+    transform: rotate(135deg) translate(1.15vw, -1.15vw);
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-0.95vw, -0.95vw);
+  }
+
+  .ilya {
+    width: 70vw;
+    height: 105vw;
+  }
+
+  .foreword-name h3 {
+    font-size: 5.208vw;
+  }
+
+  .foreword-name h4 {
+    font-size: 4.167vw;
+    margin-bottom: 2.604vw;
+  }
+
+  p {
+    font-size: 4.688vw;
+    margin-bottom: 4.688vw;
+  }
+
+  #read-more-text {
+    font-size: 4.688vw;
+  }
+
+  .foreword-name {
+    margin-top: 4.688vw;
+    margin-bottom: 0;
+    margin-right: 0px;
+  }
+
+  h1 {
+    font-size: 6.25vw;
+    line-height: 7.292vw;
+  }
+
+  h2 {
+    font-size: 5.729vw;
+    line-height: 1;
+  }
+
+  .cursos-text-block h2 {
+    margin-bottom: 5.208vw;
+  }
+
+  h3 {
+    font-size: 5.208vw;
+    line-height: 5.208vw;
+  }
+
+  .heading-block h1 {
+    margin-bottom: 5.208vw;
+  }
+
+  .frontpage-tagline h2 {
+    font-size: 5.208vw;
+  }
+
+  .frontpage-manualpic {
+    display: block;
+    background-color: #7b909c;
+    height: 88.542vw;
+  }
+
+  .frontpage-manual-text h4 {
+    margin-bottom: 2.083vw;
+    font-size: 5.208vw;
+  }
+
+  .frontpage-manual-text h3 {
+    margin-top: 4.688vw;
+    margin-bottom: 6.25vw;
+    font-size: 6.25vw;
+  }
+
+  .manual-row {
+    margin-bottom: 5.208vw;
+  }
+
+  .cursos-row h3 {
+    margin-bottom: 5.208vw;
+  }
+
+  .round-arrow-button-text {
+    font-size: 5.208vw;
+  }
+
+  .cursos-button {
+    margin-top: 5.208vw;
+    font-size: 5.208vw;
+    padding: 1.563vw 0 1.563vw 0;
+  }
+
+  .feedback-wanna-learn {
+    font-size: 6.25vw;
+  }
+
+  input[name="your-email"]::placeholder {
+    font-size: 5.208vw;
+  }
+
+  #wpcf7-f246-p11-o1 textarea::placeholder {
+    font-size: 5.208vw;
+  }
+
+  input.wpcf7-form-control.wpcf7-submit {
+    font-size: 6.25vw;
+  }
+
+  .cursos-call-button {
+    margin-top: 3.125vw;
+    padding-bottom: 1.563vw;
+    padding-top: 1.563vw;
+  }
+
+  .cursos-call-button h4 {
+    font-size: 6.25vw;
+  }
+
+  .cursos-call-button svg {
+    margin-right: 2.083vw;
+  }
+
+  .main-title h2 {
+    margin-top: 5.208vw;
+    font-size: 5.208vw;
+  }
+
+  .castellano-carousel-text {
+    margin: 7.813vw 2.604vw 7.813vw 2.604vw;
+  }
+
+  .castellano-carousel-text h4 {
+    font-size: 5.208vw;
+  }
+
+  .castellano-carousel-text h4 {
+    margin-bottom: 0.26vw;
+  }
+
+  .castellano-carousel-text h3 {
+    margin-top: 2.604vw;
+    margin-bottom: 4.167vw;
+    margin-right: 10.417vw;
+    font-size: 6.25vw;
+    line-height: 1.2;
+  }
+
+  .logosvg-footer svg {
+    width: 9.375vw;
+    height: 9.375vw;
+  }
+
+  .footermenu h3 {
+    margin-top: 5.208vw;
+    margin-bottom: 3.646vw;
+    font-size: 4.688vw;
+  }
+
+  .footermenu li {
+    font-size: 4.688vw;
+  }
+
+  .footermenu h3 {
+    margin-top: 4.688vw;
+    margin-bottom: 2.604vw;
+    font-size: 3.646vw;
+  }
+
+  .mobile-footer-contacts h4 {
+    font-size: 3.646vw;
+    line-height: 1.5;
+  }
+
+  .footer-socialiconsrow {
+    margin-bottom: 2.604vw;
+  }
+}
+
+/* MODUL Contenido */
+
+.modul-title {
+  padding-left: 2.604vw;
+  border-left: 0.521vw solid #f2c47f;
+  margin-bottom: 9.375vw;
+}
+
+.vvedenielink {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.667vw;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+.contenido-links-row {
+  margin-bottom: 4.688vw;
+}
+
+.contenido-leccion-column h3 {
+  font-size: 2.5vw;
+  text-transform: none;
+}
+
+.contenido-links-column a {
+  display: block;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 1.667vw;
+  color: #464646;
+}
+
+.contenido-links-column a:hover {
+  color: #a29a8e;
+}
+
+/* MODUL Contenido for LG */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .vvedenielink {
+    font-size: 1.875vw;
+  }
+
+  .contenido-leccion-column h3 {
+    font-size: 2.604vw;
+  }
+
+  .contenido-links-column a {
+    font-size: 1.875vw;
+  }
+}
+
+/* MODUL Contenido for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .modul-title {
+    padding-left: 4.167vw;
+    border-left: 3.646vw solid #f2c47f;
+    margin-bottom: 15.626vw;
+  }
+
+  .vvedenielink {
+    font-size: 6.25vw;
+  }
+
+  .contenido-links-row {
+    margin-bottom: 12.5vw;
+  }
+
+  .contenido-leccion-column h3 {
+    font-size: 8.333vw;
+    margin-bottom: 7.5vw;
+  }
+
+  .contenido-links-column a {
+    font-size: 6.668vw;
+    margin-bottom: 1.667vw;
+    line-height: 1.33;
+  }
+}
+
+/* Tooltips */
+
+.Zebra_Tooltip {
+  font-family: "Futura PT", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 1.146vw !important;
+}
+
+.Zebra_Tooltip_Message {
+  text-align: center !important;
+}
+
+.banner-discount {
+  padding: 5px 20px;
+  margin: 0 30px;
+  max-width: 300px;
+  background-color: rgb(242, 196, 127);
+  border: 1px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner-discount__spn {
+  text-transform: initial;
+}
+
+.banner-discount p {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.banner-discount-mobile {
+  display: none;
+}
+
+/* Tooltips for MD, SM and XS */
+
+@media screen and (max-width: 991px) {
+  .Zebra_Tooltip {
+    font-size: 6.25vw !important;
+  }
+
+  .Zebra_Tooltip_Message {
+    padding: 5.208vw !important;
+    border-radius: 0.625vw !important;
+  }
+
+  .banner-discount {
+    display: none;
+  }
+
+  .banner-discount-mobile {
+    display: block;
+    padding: 5px 20px;
+    margin: 0;
+    background-color: rgb(242, 196, 127);
+    border: 2px solid black;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    transform: translateY(70px);
+  }
+}
