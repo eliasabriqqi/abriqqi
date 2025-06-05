@@ -5,10 +5,6 @@
 /* Header */
 /* MIXINS */
 /* VERTICAL SPACING */
-.cool {
-  margin-top: 100rem;
-}
-
 .online-course-heading--vertical-spacing {
   margin: 13.4rem 0 3rem 0;
 }

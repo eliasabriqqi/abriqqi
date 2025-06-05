@@ -2,18 +2,26 @@
   "name": "abriqqi",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/eliasabriqqi/abriqqi#readme",
+  "bugs": {
+    "url": "https://github.com/eliasabriqqi/abriqqi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasabriqqi/abriqqi.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
     "compile:sass": "sass src/sass/main.scss src/css/main.css -w",
-    "compile:content": "sass src/sass/pages/aboutme/aboutme.scss src/css/aboutme.css -w"
-  },
-  "devDependencies": {
-    "sass": "^1.85.1"
+    "compile:content": "sass src/sass/lesson/lesson.scss src/css/lesson.css -w"
   },
   "dependencies": {
     "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1"
   }
 }

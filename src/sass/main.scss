@@ -173,8 +173,8 @@ input[type="submit"] {
 
 /* Lazy Loading Background Images */
 
-#lazy {
-  background-image: none;
+[data-lazyload="lazy"] {
+  background-image: none !important;
 }
 
 /* Video */
@@ -819,7 +819,7 @@ p.application-form__text {
     transform: translateY(-50%);
     margin-top: 0;
     width: 10vw;
-    height: 100%;
+    height: 101%;
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: initial;

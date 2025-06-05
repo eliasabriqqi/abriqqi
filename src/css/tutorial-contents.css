@@ -33,6 +33,11 @@
   grid-column-end: 5;
 }
 
+.page-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tutorial-contents__section-block:last-of-type,
 .tutorial-contents__section hr,
 .page-bottom-nav {
@@ -41,6 +46,7 @@
 
 .tutorial-contents__section li {
   width: fit-content;
+  line-height: 1.5;
 }
 
 .tutorial-contents__section li:hover,

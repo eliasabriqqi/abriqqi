@@ -83,12 +83,12 @@
 
 .letras {
   color: #dfaa5c;
-  font-weight: 700;
+  font-family: "Futura PT Book";
 }
 
 .suelto {
   color: #7b909c;
-  font-weight: 600;
+  font-family: "Futura PT Book";
 }
 
 /* Small Screen */

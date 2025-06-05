@@ -82,7 +82,7 @@
 }
 
 .practice__main-btn {
-  margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
+  margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
 }
 
 .application-form--practice {
@@ -167,7 +167,7 @@
 
   .practice__main-btn {
     width: unset;
-    margin-bottom: set-vertical-space-1(
+    margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
@@ -198,12 +198,12 @@
     display: flex;
   }
 
-  .practice-first-block {
+  .practice-first-block,
+  .practice-second-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
-    align-items: center;
   }
 
   .practice-second-block__text {
@@ -301,6 +301,17 @@
     background-image: url(/src/assets/pics/foreword/lg/foreword-copybook-lg-min.webp);
   }
 
+  .practice-page__vertical-spacing .phone-num {
+    font-size: 3.1rem;
+  }
+
+  .practice-second-block {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   .practice-second-block__pic {
     background-image: url(/src/assets/pics/foreword/lg/foreword-oral-lg-min.webp);
   }
@@ -363,12 +374,19 @@
     background-image: url(/src/assets/pics/foreword/xl/foreword-copybook-xl-min.webp);
   }
 
+  .practice-second-block {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   .practice-second-block__pic {
     background-image: url(/src/assets/pics/foreword/xl/foreword-oral-xl-min.webp);
   }
 
   .practice-price {
-    margin-bottom: set-vertical-space-1(
+    margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
@@ -382,7 +400,7 @@
   }
 
   .practice-third-block {
-    margin-bottom: set-vertical-space-3(
+    margin-bottom: set-vertical-space-5(
       $font-size-primary,
       $line-height-primary
     );
@@ -425,12 +443,19 @@
     background-image: url(/src/assets/pics/foreword/xxl/foreword-copybook-xxl-min.webp);
   }
 
+  .practice-second-block {
+    margin-bottom: set-vertical-space-4(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
   .practice-second-block__pic {
     background-image: url(/src/assets/pics/foreword/xxl/foreword-oral-xxl-min.webp);
   }
 
   .practice-price {
-    margin-bottom: set-vertical-space-1(
+    margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
@@ -444,7 +469,7 @@
   }
 
   .practice-third-block {
-    margin-bottom: set-vertical-space-3(
+    margin-bottom: set-vertical-space-5(
       $font-size-primary,
       $line-height-primary
     );

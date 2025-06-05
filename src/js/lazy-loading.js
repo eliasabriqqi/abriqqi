@@ -2,14 +2,14 @@
 
 // Lazy Loading Background Images and Video
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll("#lazy");
+  const images = document.querySelectorAll("[data-lazyload='lazy']");
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const image = entry.target;
-          image.id = "";
+          image.dataset.lazyload = "";
 
           // Video Loading
           if (entry.target.classList.contains("video-poster")) {

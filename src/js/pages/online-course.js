@@ -2,7 +2,7 @@
 
 const pageContent = document.querySelector(".page-content");
 
-const content = `<div class="grid-container"></div>
+const content = ` <div class="grid-container"></div>
 
 <div class="grid-container online-course-heading--vertical-spacing">
   <div
@@ -31,7 +31,7 @@ const content = `<div class="grid-container"></div>
   <div
     class="online-course__video col-start-1 col-end-5 col-end-sm-9 col-end-md-11 col-end-lg-13"
   >
-    <div class="video-poster online-course__video-poster" id="lazy">
+    <div class="video-poster online-course__video-poster" data-lazyload="lazy">
       <div class="play-btn"></div>
       <video
         src=""
@@ -184,7 +184,7 @@ const content = `<div class="grid-container"></div>
         </div>
 
         <div
-          class="video-poster abriqqi-slider__pic slider-pic1 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12"  id="lazy"
+          class="video-poster abriqqi-slider__pic slider-pic1 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12"  data-lazyload="lazy"
         >
         <div class="play-btn"></div>
         <video
@@ -214,7 +214,7 @@ const content = `<div class="grid-container"></div>
         </div>
 
         <div
-          class="video-poster abriqqi-slider__pic slider-pic2 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12" id="lazy"
+          class="video-poster abriqqi-slider__pic slider-pic2 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12" data-lazyload="lazy"
         >
         <div class="play-btn"></div>
         <video
@@ -244,7 +244,7 @@ const content = `<div class="grid-container"></div>
         </div>
 
         <div
-          class="video-poster abriqqi-slider__pic slider-pic3 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12" id="lazy"
+          class="video-poster abriqqi-slider__pic slider-pic3 col-start-1 col-end-5 col-end-sm-9 col-start-md-6 col-end-md-10 col-start-lg-7 col-end-lg-12" data-lazyload="lazy"
         >
         <div class="play-btn"></div>
         <video
