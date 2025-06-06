@@ -2,7 +2,7 @@
 
 @import "../../variables/variables";
 
-.aboutme-heading--vertical-spacing {
+.aboutproject-heading--vertical-spacing {
   margin-top: calc(
     set-vertical-space-2($font-size-primary, $line-height-primary) + $nav-height
   );
@@ -10,33 +10,33 @@
   margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
 }
 
-.aboutme__text-block.aboutme__first-block {
+.aboutproject__text-block.aboutproject__first-block {
   align-items: center;
 }
 
-.aboutme__text-block h3 {
+.aboutproject__text-block h3 {
   font-style: italic;
   margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
 }
 
-.aboutme__text-block {
+.aboutproject__text-block {
   margin-bottom: set-vertical-space-1($font-size-primary, $line-height-primary);
 }
 
-.aboutme__pic {
+.aboutproject__pic {
   margin: set-vertical-space-1($font-size-primary, $line-height-primary) -3rem 0 -3rem;
   height: 58.9rem;
-  background-image: url(/src/assets/pics/aboutme/xsm/aboutme-xsm-min.webp);
+  background-image: url(/src/assets/pics/aboutproject/xsm/aboutproject-xsm-min.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.aboutme__date-block {
+.aboutproject__date-block {
   margin-bottom: set-vertical-space-2($font-size-primary, $line-height-primary);
 }
 
-.aboutme__date {
+.aboutproject__date {
   display: flex;
   justify-content: end;
 }
@@ -46,7 +46,7 @@
 @media only screen and (min-width: 600px) {
   @import "../../variables/variables-sm";
 
-  .aboutme-heading--vertical-spacing {
+  .aboutproject-heading--vertical-spacing {
     margin-top: calc(
       set-vertical-space-3($font-size-primary, $line-height-primary) +
         $nav-height
@@ -58,28 +58,28 @@
     );
   }
 
-  .aboutme__text-block h3 {
+  .aboutproject__text-block h3 {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__text-block {
+  .aboutproject__text-block {
     margin-bottom: set-vertical-space-1(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__pic {
+  .aboutproject__pic {
     margin: set-vertical-space-1($font-size-primary, $line-height-primary) -3rem
       set-vertical-space-2($font-size-primary, $line-height-primary) -3rem;
     height: 57.7rem;
-    background-image: url(/src/assets/pics/aboutme/sm/aboutme-sm-min.webp);
+    background-image: url(/src/assets/pics/aboutproject/sm/aboutproject-sm-min.webp);
   }
 
-  .aboutme__date-block {
+  .aboutproject__date-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
@@ -92,36 +92,39 @@
 @media only screen and (min-width: 900px) {
   @import "../../variables/variables-md";
 
-  .aboutme-heading--vertical-spacing {
+  .aboutproject-heading--vertical-spacing {
     margin-top: calc(
       set-vertical-space-3($font-size-primary, $line-height-primary) +
         $nav-height
     );
 
-    margin-bottom: 0;
-  }
-
-  .aboutme__text-block h3 {
-    margin-bottom: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
-  }
-
-  .aboutme__text-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__pic {
-    margin: 0;
-    height: 61.9rem;
-    background-image: url(/src/assets/pics/aboutme/md/aboutme-md-min.webp);
+  .aboutproject__text-block h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
-  .aboutme__date-block {
+  .aboutproject__text-block {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .aboutproject__pic {
+    margin: 0;
+    height: 61.9rem;
+    background-image: url(/src/assets/pics/aboutproject/md/aboutproject-md-min.webp);
+  }
+
+  .aboutproject__date-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
@@ -134,33 +137,38 @@
 @media only screen and (min-width: 1200px) {
   @import "../../variables/variables-lg";
 
-  .aboutme-heading--vertical-spacing {
+  .aboutproject-heading--vertical-spacing {
     margin-top: calc(
       set-vertical-space-3($font-size-primary, $line-height-primary) +
         $nav-height
     );
-  }
 
-  .aboutme__text-block h3 {
-    margin-bottom: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
-  }
-
-  .aboutme__text-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__pic {
-    height: 61.9rem;
-    background-image: url(/src/assets/pics/aboutme/lg/aboutme-lg-min.webp);
+  .aboutproject__text-block h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
-  .aboutme__date-block {
+  .aboutproject__text-block {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .aboutproject__pic {
+    height: 61.9rem;
+    background-image: url(/src/assets/pics/aboutproject/lg/aboutproject-lg-min.webp);
+  }
+
+  .aboutproject__date-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
@@ -173,33 +181,38 @@
 @media only screen and (min-width: 1400px) {
   @import "../../variables/variables-xl";
 
-  .aboutme-heading--vertical-spacing {
+  .aboutproject-heading--vertical-spacing {
     margin-top: calc(
       set-vertical-space-3($font-size-primary, $line-height-primary) +
         $nav-height
     );
-  }
 
-  .aboutme__text-block h3 {
-    margin-bottom: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
-  }
-
-  .aboutme__text-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__pic {
-    height: 69.9rem;
-    background-image: url(/src/assets/pics/aboutme/xl/aboutme-xl-min.webp);
+  .aboutproject__text-block h3 {
+    margin-bottom: set-vertical-space-1(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
-  .aboutme__date-block {
+  .aboutproject__text-block {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .aboutproject__pic {
+    height: 69.9rem;
+    background-image: url(/src/assets/pics/aboutproject/xl/aboutproject-xl-min.webp);
+  }
+
+  .aboutproject__date-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
@@ -212,33 +225,38 @@
 @media only screen and (min-width: 1800px) {
   @import "../../variables/variables-xxl";
 
-  .aboutme-heading--vertical-spacing {
+  .aboutproject-heading--vertical-spacing {
     margin-top: calc(
       set-vertical-space-2($font-size-primary, $line-height-primary) +
         $nav-height
     );
-  }
 
-  .aboutme__text-block h3 {
-    margin-bottom: set-vertical-space-1(
-      $font-size-primary,
-      $line-height-primary
-    );
-  }
-
-  .aboutme__text-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary
     );
   }
 
-  .aboutme__pic {
-    height: 69.6rem;
-    background-image: url(/src/assets/pics/aboutme/xxl/aboutme-xxl-min.webp);
+  .aboutproject__text-block h3 {
+    margin-bottom: set-vertical-space-(
+      $font-size-primary,
+      $line-height-primary
+    );
   }
 
-  .aboutme__date-block {
+  .aboutproject__text-block {
+    margin-bottom: set-vertical-space-2(
+      $font-size-primary,
+      $line-height-primary
+    );
+  }
+
+  .aboutproject__pic {
+    height: 69.6rem;
+    background-image: url(/src/assets/pics/aboutproject/xxl/aboutproject-xxl-min.webp);
+  }
+
+  .aboutproject__date-block {
     margin-bottom: set-vertical-space-2(
       $font-size-primary,
       $line-height-primary

@@ -1,0 +1,152 @@
+/* VARIABLES */
+/* Font Settings */
+/* Standout Colors */
+/* Other Colors */
+/* Header */
+/* MIXINS */
+/* VERTICAL SPACING */
+.aboutproject-heading--vertical-spacing {
+  margin-top: 13.4rem;
+  margin-bottom: 6rem;
+}
+
+.aboutproject__text-block.aboutproject__first-block {
+  align-items: center;
+}
+
+.aboutproject__text-block h3 {
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.aboutproject__text-block {
+  margin-bottom: 3rem;
+}
+
+.aboutproject__pic {
+  margin: 3rem -3rem 0 -3rem;
+  height: 58.9rem;
+  background-image: url(/src/assets/pics/aboutproject/xsm/aboutproject-xsm-min.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutproject__date-block {
+  margin-bottom: 6rem;
+}
+
+.aboutproject__date {
+  display: flex;
+  justify-content: end;
+}
+
+/* Small Screen */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  .aboutproject-heading--vertical-spacing {
+    margin-top: 17.5rem;
+    margin-bottom: 5rem;
+  }
+  .aboutproject__text-block h3 {
+    margin-bottom: 2.5rem;
+  }
+  .aboutproject__text-block {
+    margin-bottom: 2.5rem;
+  }
+  .aboutproject__pic {
+    margin: 2.5rem -3rem 5rem -3rem;
+    height: 57.7rem;
+    background-image: url(/src/assets/pics/aboutproject/sm/aboutproject-sm-min.webp);
+  }
+  .aboutproject__date-block {
+    margin-bottom: 5rem;
+  }
+}
+/* Medium Screen */
+@media only screen and (min-width: 900px) {
+  /* Header */
+  .aboutproject-heading--vertical-spacing {
+    margin-top: 17.45rem;
+    margin-bottom: 4.5rem;
+  }
+  .aboutproject__text-block h3 {
+    margin-bottom: 2.25rem;
+  }
+  .aboutproject__text-block {
+    margin-bottom: 4.5rem;
+  }
+  .aboutproject__pic {
+    margin: 0;
+    height: 61.9rem;
+    background-image: url(/src/assets/pics/aboutproject/md/aboutproject-md-min.webp);
+  }
+  .aboutproject__date-block {
+    margin-bottom: 4.5rem;
+  }
+}
+/* Large Screen */
+@media only screen and (min-width: 1200px) {
+  /* Header */
+  .aboutproject-heading--vertical-spacing {
+    margin-top: 18.55rem;
+    margin-bottom: 4.5rem;
+  }
+  .aboutproject__text-block h3 {
+    margin-bottom: 2.25rem;
+  }
+  .aboutproject__text-block {
+    margin-bottom: 4.5rem;
+  }
+  .aboutproject__pic {
+    height: 61.9rem;
+    background-image: url(/src/assets/pics/aboutproject/lg/aboutproject-lg-min.webp);
+  }
+  .aboutproject__date-block {
+    margin-bottom: 4.5rem;
+  }
+}
+/* Extra Large Screen */
+@media only screen and (min-width: 1400px) {
+  /* Header */
+  .aboutproject-heading--vertical-spacing {
+    margin-top: 20.5rem;
+    margin-bottom: 5rem;
+  }
+  .aboutproject__text-block h3 {
+    margin-bottom: 2.5rem;
+  }
+  .aboutproject__text-block {
+    margin-bottom: 5rem;
+  }
+  .aboutproject__pic {
+    height: 69.9rem;
+    background-image: url(/src/assets/pics/aboutproject/xl/aboutproject-xl-min.webp);
+  }
+  .aboutproject__date-block {
+    margin-bottom: 5rem;
+  }
+}
+/* Extra Extra Large Screen */
+@media only screen and (min-width: 1800px) {
+  /* Header */
+  .aboutproject-heading--vertical-spacing {
+    margin-top: 20.9rem;
+    margin-bottom: 5.5rem;
+  }
+  .aboutproject__text-block h3 {
+    margin-bottom: set-vertical-space-(2.2rem, 1.25);
+  }
+  .aboutproject__text-block {
+    margin-bottom: 5.5rem;
+  }
+  .aboutproject__pic {
+    height: 69.6rem;
+    background-image: url(/src/assets/pics/aboutproject/xxl/aboutproject-xxl-min.webp);
+  }
+  .aboutproject__date-block {
+    margin-bottom: 5.5rem;
+  }
+}
+
+/*# sourceMappingURL=about-project.css.map */
